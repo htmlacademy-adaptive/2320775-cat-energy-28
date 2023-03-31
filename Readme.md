@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анна Рябцева](https://up.htmlacademy.ru/adaptive/28/user/2320775).
-* Наставник: [Михаил Данюшин](hhttps://htmlacademy.ru/profile/id225742).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
