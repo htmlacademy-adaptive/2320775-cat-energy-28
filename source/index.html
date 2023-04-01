@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
-  <meta name="keywords" content="Похудение, набор массы, купить функциональное питание для котов, купить продукцию, корм Cat Energy">
+  <meta name="keywords"
+    content="Похудение, набор массы, купить функциональное питание для котов, купить продукцию, корм Cat Energy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="#!">
   <link rel="icon" type="image/png" sizes="32x32" href="#!">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-
 <body class="page__body">
-  <header class="master-header">
-    <div class="master-header_logo nav-logo">
-      <a class="nav-logo__mobile nav-logo__tablet nav-logo__desktop" href="#!">
+  <header class="header">
+    <div class="header__logo nav-logo">
+      <a class="nav-logo__mobile" href="#!">
         <span class="visually-hidden">Логотип "Cat Energy".</span>
       </a>
-      <p class="nav-logo__about">Cat Energy</p>
     </div>
-    <nav class="master-navigation">
-      <button class="master-navigation__toggle" type="button">
+    <div class="header__slogan nav-slogan">
+      <span>Cat Energy</span>
+    </div>
+    <nav class="header-navigation">
+      <button class="header-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации.</span>
       </button>
-      <ul class="master-navigation__list">
-        <li class="master-navigation__item master-navigation__item--current">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item header-navigation__item--current">
           <a href="index.html">Главная</a>
         </li>
-        <li class="master-navigation__item">
+        <li class="header-navigation__item">
           <a href="#!">Каталог продукции</a>
         </li>
-        <li class="master-navigation__item">
+        <li class="header-navigation__item">
           <a href="#!">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-
   <main class="main-wrapper">
     <section class="offer">
       <div class="offer__review">
@@ -51,7 +51,6 @@
         <a class="button" href="#">Подобрать программу</a>
       </div>
     </section>
-
     <section class="features">
       <h2 class="visually-hidden">Список программ</h2>
       <ul class="features__list">
@@ -63,7 +62,7 @@
             Energy Slim поможет вашему
             питомцу сбросить лишний вес.</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features-link">
           <a class="button" href="#">Каталог SLIM</a>
           <img src="" alt="Перейти по ссылке.">
           </a>
@@ -76,14 +75,13 @@
             вашему коту нарастить
             необходимые мышцы!</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features-link">
           <a class="button" href="#">Каталог PRO</a>
           <img src="" alt="Перейти по ссылке.">
           </a>
         </li>
       </ul>
     </section>
-
     <section class="description">
       <div class="description__wrapper">
         <h2 class="description__title">Как это работает</h2>
@@ -102,7 +100,6 @@
         </ul>
       </div>
     </section>
-
     <section class="example">
       <div class="example__wrapper">
         <div class="example__description description-example">
@@ -131,9 +128,9 @@
               Затрачено времени
             </dd>
           </dl>
-          <dd class="results-example__text">
+          <span class="results-example__about">
             Затраты на питание: 15 000 РУБ.
-          </dd>
+          </span>
         </div>
       </div>
       <div class="example__slider slider-example">
@@ -143,7 +140,7 @@
           <img class="slider-image-xs" src="" alt="Кот Борис после снижения веса.">
           <div class="slider-example__range">
             <div class="range-scale">
-              <div class="bar">
+              <div class="range-bar">
                 <button class="range-toggle">
                   <span class="visually-hidden">Изменить состояние кота</span>
                 </button>
@@ -153,31 +150,55 @@
         </figure>
       </div>
     </section>
-
-    <section class="information">
-      <aside class="information__aside aside-information">
-        <h3 class="aside-information__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="aside-information__description">ул. Большая
+    <section class="invitation">
+      <aside class="invitation__aside aside-invitation">
+        <h3 class="aside-invitation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="aside-invitation__description">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
         </p>
       </aside>
-      <div class="information__map map-information">
-        <iframe class="map-information__source" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.26" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+      <div class="invitation__map map-invitation">
+        <iframe class="map-invitation__source"
+          src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.26"
+          width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </div>
     </section>
   </main>
-  <footer class="footer-page">
-    <h2 class="visually-hidden">Контактные данные для связи</h2>
-    <div>
-
-    </div>
-
-
-
+  <footer class="footer">
+    <section class="footer__contacts">
+      <h2 class="visually-hidden">Контактные данные для связи</h2>
+      <div class="footer__wrapper">
+        <div class="footer__contacts nav-slogan">
+          <span>Cat Energy</span>
+        </div>
+        <div class="footer__contacts social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="button social__link" href="https://vk.com/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="button social__link" href="https://www.youtube.com/user/htmlacademyru" rel="nofollow noreferer">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="button social__link" href="https://t.me/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts address">
+          <a class="address__link" href="https://htmlacademy.ru">
+            <span class="visually-hidden">HTML academy</span>
+            <img class="address__image" src="#!" alt="Ссылка на сайт HTML academy.">
+          </a>
+        </div>
+      </div>
+    </section>
   </footer>
-
-
 </body>
-
 </html>
