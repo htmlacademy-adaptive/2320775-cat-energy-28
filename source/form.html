@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="keywords"
@@ -9,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="#!">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body>
   <header class="header">
     <a class="header__logo" href="#!">
@@ -33,6 +35,124 @@
     </nav>
   </header>
   <main class="main-wrapper">
+    <section class="program-form">
+      <div class="program-form__wrapper">
+        <h1 class="program-form__title">Подбор программы</h1>
+        <form class="program-form__option" action="https://echo.htmlacademy.ru/" method="get">
+          <h2>Заполните анкету, и мы подберем
+            программу питания для вашего кота</h2>
+          <fieldset>
+            <ul>
+              <li>
+                <label>
+                  <span>Имя:*</span>
+                  <input type="text" name="name" placeholder="Барсик" required>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <span>Вес (кг):*</span>
+                  <input type="number" name="weight" placeholder="7" min="0" max="25" required>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <span>Возраст (лет):</span>
+                  <input type="number" name="age" placeholder="7" min="0" max="25">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <ul>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="radio" name="catalog-filter" value="slim" checked>
+                  <span class="mark"></span>
+                  <span>Похудение</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="radio" name="catalog-filter" value="grow">
+                  <span class="mark"></span>
+                  <span>Набор массы</span>
+                </label>
+              </li>
+              <label>
+                <input class="select-input visually-hidden" type="radio" name="catalog-filter" value="any">
+                <span class="mark"></span>
+                <span>Не знаю (Нужен ваш совет)</span>
+              </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Контактные данные
+              (владельца кота)</legend>
+            <ul>
+              <li>
+                <label>
+                  <span>E-mail:*</span>
+                  <input type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <span>Телефон:*</span>
+                  <input type="tel" name="phone" placeholder="8 (960) 900-60-90" maxlength="21" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <div>
+              <label>
+                <span>Комментарий</span>
+                <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <ul>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="sweetener" checked>
+                  <span class="mark"></span>
+                  <span>Сахарозаменитель</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="water">
+                  <span class="mark"></span>
+                  <span>Питьевая вода</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="milk">
+                  <span class="mark"></span>
+                  <span>Молоко</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="vitamin">
+                  <span class="mark"></span>
+                  <span>Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <button class="button" type="submit">Отправить заявку</button>
+            <p>* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
+    </section>
 
 
 
@@ -40,6 +160,23 @@
 
 
 
+    <section class="address">
+      <div class="address__wrapper">
+        <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="address__invitation">
+          <span class="address__title">Приглашаем к сотрудничеству дилеров!</span>
+          <p class="address__description">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+        </address>
+        <div class="invitation__map map-invitation">
+          <iframe class="map-invitation__source"
+            src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.26"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <section class="footer__contacts">
@@ -76,5 +213,3 @@
       </div>
     </section>
   </footer>
-
-
