@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="Похудение, набор массы, купить функциональное питание для котов, купить продукцию, корм Cat Energy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="#!">
+  <link rel="icon" type="image/png" sizes="32x32" href="#!">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2320775-cat-energy-28/3/">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href="#!">
+      <img class="header__image-pic" src="#!" width="" height="" alt="Логотип Cat Energy.">
+      <img class="header__image-slogan" src="#!" width="" height="" alt="Логотип Cat Energy.">
+    </a>
+    <nav class="header-navigation navigation">
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню навигации.</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="../source/index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="../source/catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item navigation__item--current">
+          <a class="navigation__link" href="#!">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-wrapper">
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <h1 class="feedback__title">Подбор программы</h1>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="feedback-form__box">
+            <h2 class="feedback-form__title">Заполните анкету, и мы подберем
+              программу питания для вашего кота</h2>
+            <ul class="feedback-form__list">
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <span class="feedback-form__field-label">Имя:*</span>
+                  <input class="feedback-form__field-control input" type="text" name="name" placeholder="Барсик" required>
+                </label>
+              </li>
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <span class="feedback-form__field-label">Вес (кг):*</span>
+                  <input class="feedback-form__field-control input" type="number" name="weight" placeholder="7" min="0" max="25" required>
+                </label>
+              </li>
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <span class="feedback-form__field-label">Возраст (лет):</span>
+                  <input class="feedback-form__field-control input" type="number" name="age" placeholder="7" min="0" max="25">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback-form__box">
+            <ul class="feedback-form__list">
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <input class="feedback-form__field-control input visually-hidden" type="radio" name="feedback-name" value="slim" checked>
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Похудение</span>
+                </label>
+              </li>
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <input class="feedback-form__field-control input visually-hidden" type="radio" name="feedback-name" value="grow">
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="feedback-form__field">
+                <label class="feedback-form__field">
+                  <input class="feedback-form__field-control input visually-hidden" type="radio" name="feedback-name" value="any">
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback-form__box">
+            <legend class="feedback-form__title">Контактные данные
+              (владельца кота)</legend>
+            <ul class="feedback-form__list">
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <span class="feedback-form__field-label">E-mail:*</span>
+                  <input class="feedback-form__field-control input" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <span class="feedback-form__field-label">Телефон:*</span>
+                  <input class="feedback-form__field-control input" type="tel" name="phone" placeholder="8 (960) 900-60-90" maxlength="21" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback-form__box">
+            <div class="feedback-form__wrapper">
+              <label class="feedback-form__field">
+                <span class="feedback-form__field-label">Комментарий</span>
+                <textarea class="feedback-form__field-control input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__box">
+            <legend class="feedback-form__title">Дополнительно</legend>
+            <ul class="feedback-form__list">
+              <li class="feedback-form__item">
+                <label class="feedback-form__field">
+                  <input class="feedback-form__field-control visually-hidden" type="checkbox" name="sweetener" checked>
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="water">
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Питьевая вода</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="milk">
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Молоко</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="select-input visually-hidden" type="checkbox" name="vitamin">
+                  <span class="mark"></span>
+                  <span class="feedback-form__field-label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="feedback-form__submit">
+            <button class="feedback-form__button button" type="submit">Отправить заявку</button>
+            <p class="feedback-form__required">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="address">
+      <div class="address__wrapper">
+        <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="address__invitation">
+          <span class="address__title">Приглашаем к сотрудничеству дилеров!</span>
+          <p class="address__description">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+        </address>
+        <div class="address__map map-invitation">
+          <iframe class="map-invitation__source"
+            src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17.26"
+            width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__contacts">
+      <h2 class="visually-hidden">Контактные данные для связи</h2>
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="#!">
+          <img class="footer__image-slogan" src="#!" width="" height="" alt="Логотип Cat Energy.">
+        </a>
+        <div class="footer__contacts social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="button social__link" href="https://vk.com/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="button social__link" href="https://www.youtube.com/user/htmlacademyru" rel="nofollow noreferer">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="button social__link" href="https://t.me/htmlacademy" rel="nofollow noreferer">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts address">
+          <a class="address__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML academy</span>
+            <img class="address__image" src="#!" alt="Ссылка на сайт HTML academy.">
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
