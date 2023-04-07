@@ -1,0 +1,28 @@
+.offer {
+  width: 320px;
+  min-height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+  color: #ffffff;
+}
+
+.offer__review {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.offer__title {
+  @include oswald400;
+  @include title;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.offer__about {
+  @include oswald400;
+  @include title;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

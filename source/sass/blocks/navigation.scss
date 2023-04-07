@@ -12,13 +12,14 @@
   flex-wrap: wrap;
 }
 
-.navigation__item {
-  width: 320px;
-}
-
 .navigation__link {
   display: block;
   color: inherit;
   padding: 22px 20px 24px;
   border-top: 1px solid #e6e6e6;
+}
+
+//ОТОБРАЗИТЬ МЕНЮ НАВИГАЦИИ//
+.navigation__list--close {
+  display: none;
 }
