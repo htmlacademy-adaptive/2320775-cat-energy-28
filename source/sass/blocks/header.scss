@@ -1,3 +1,13 @@
 .header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
   background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header__navigation {
+  padding: 10px 20px 18px;
 }

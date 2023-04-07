@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  min-height: 38px;
+}
+
+.navigation__list {
+  @include list-reset;
+}
