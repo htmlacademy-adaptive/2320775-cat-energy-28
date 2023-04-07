@@ -43,6 +43,10 @@
   height: 270px;
 }
 
+.offer__button--wrapper {
+  width: 280px;
+}
+
 .offer__button {
   a {
     @include oswald400;
@@ -51,5 +55,6 @@
     color: #ffffff;
     background-color: #68b738;
     padding: 7px 44px;
+    margin-bottom: 20px;
   }
 }
