@@ -1,8 +1,11 @@
-.offer {
-  width: 320px;
-  min-height: 302px;
-  background-color: rgba(104, 183, 56, 0.85);
-  color: #ffffff;
+.offer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 280px;
 }
 
 .offer__review {
@@ -10,6 +13,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  width: 320px;
+  min-height: 302px;
+  background: rgba(104, 183, 56, 0.85);
 }
 
 .offer__title {
@@ -17,6 +23,9 @@
   @include title;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  color: #ffffff;
 }
 
 .offer__about {
@@ -25,4 +34,22 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 29px;
+  color: #ffffff;
+}
+
+//Пока нет картинки резерв места //
+.offer__logo {
+  height: 270px;
+}
+
+.offer__button {
+  a {
+    @include oswald400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #68b738;
+    padding: 7px 44px;
+  }
 }
