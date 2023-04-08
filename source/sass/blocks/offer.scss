@@ -43,18 +43,12 @@
   height: 270px;
 }
 
-.offer__button--wrapper {
-  width: 280px;
+.offer__button {
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.offer__button {
-  a {
-    @include oswald400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #68b738;
-    padding: 7px 44px;
-    margin-bottom: 20px;
-  }
+.offer__button--wrapper {
+  width: 280px;
+  margin-bottom: 20px;
 }

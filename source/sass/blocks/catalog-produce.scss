@@ -1,0 +1,8 @@
+.catalog-produce__title {
+  @include oswald400;
+  @include title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}

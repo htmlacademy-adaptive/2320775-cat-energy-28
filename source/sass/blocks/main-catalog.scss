@@ -1,0 +1,16 @@
+.main-catalog {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-catalog__caption {
+  @include oswald400;
+  @include title;
+  font-size: 36px;
+  line-height: 36px;
+}

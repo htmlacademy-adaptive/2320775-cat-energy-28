@@ -1,0 +1,27 @@
+.catalog-more__wrapper {
+  width: 280px;
+  min-height: 158px;
+  margin: 0 auto;
+}
+
+.catalog-more__title {
+  @include oswald400;
+  @include title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog-more__about {
+  @include lato400;
+  @include title;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-more__button--all {
+  color: #444444;
+  background-color: #f2f2f2;
+}
