@@ -1,0 +1,45 @@
+.example__wrapper {
+  width: 320px;
+  background-color: #eaeaea;
+}
+
+.example__description {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__title {
+  @include title;
+  @include oswald400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.example__about {
+  @include lato400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__results {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__count {
+  @include title;
+  @include oswald400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__slider {
+  width: 320px;
+  background-color: #eaeaea;
+}
+

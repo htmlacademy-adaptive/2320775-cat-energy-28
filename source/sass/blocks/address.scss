@@ -1,0 +1,29 @@
+.address__wrapper {
+  width: 320px;
+  background-color: #ffffff;
+}
+
+.address__wrapper-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.address__title {
+  @include oswald400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__description {
+  @include lato400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.address__map {
+  width: 320px;
+  background-color: #ffffff;
+}
