@@ -1,0 +1,23 @@
+.description__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.description__title {
+  @include title;
+  @include oswald400;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.description__list {
+  @include lato400;
+  @include list-reset;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 49px;
+}
