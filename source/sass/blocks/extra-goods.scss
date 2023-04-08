@@ -12,8 +12,16 @@
 }
 
 .extra-goods__caption {
-  @include lato400;
+  @include oswald400;
   @include title;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-goods__row {
+  @include lato400;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
