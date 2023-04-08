@@ -1,0 +1,23 @@
+.feedback-form {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.feedback-form__wrapper {
+  width: 280px;
+}
+
+.feedback-form__title {
+  @include oswald400;
+  @include title;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.feedback-form__about {
+  @include oswald400;
+  @include title;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
