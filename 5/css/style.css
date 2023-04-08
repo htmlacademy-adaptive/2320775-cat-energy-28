@@ -1,0 +1,684 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("..fonts/lato/Lato-Regular.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+body {
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 18.39px;
+}
+
+.header__toggle {
+  width: 24px;
+  height: 18px;
+  border: 0;
+  color: #000000;
+  background: url("../img/logo_hamburger.svg");
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navigation__link {
+  display: block;
+  color: inherit;
+  padding: 22px 20px 24px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.navigation__list--close {
+  display: none;
+}
+
+.offer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 280px;
+}
+
+.offer__review {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 320px;
+  min-height: 302px;
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.offer__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.offer__about {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  color: #ffffff;
+}
+
+.offer__logo {
+  height: 270px;
+}
+
+.offer__button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.offer__button--wrapper {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: block;
+  padding: 7px 44px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.features__wrapper {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.features__list {
+  width: 280px;
+  min-height: 266px;
+  background-color: #f2f2f2;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.features__about {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 227px;
+  height: 90px;
+}
+
+.main-wrapper {
+  background-color: #ffffff;
+}
+
+.description__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.description__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.description__list {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 49px;
+}
+
+.example__wrapper {
+  width: 320px;
+  background-color: #eaeaea;
+}
+
+.example__description {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.example__about {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__results {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__count {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__slider {
+  width: 320px;
+  background-color: #eaeaea;
+}
+
+.slider-example__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.address__wrapper {
+  width: 320px;
+  background-color: #ffffff;
+}
+
+.address__wrapper--form {
+  background-color: #f2f2f2;
+}
+
+.address__wrapper-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.address__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.address__map {
+  width: 320px;
+  background-color: #ffffff;
+}
+
+.map-invitation__source {
+  margin: 0 auto;
+}
+
+.footer__contacts {
+  width: 320px;
+  min-height: 240px;
+  background-color: #f2f2f2;
+}
+
+.footer__academy-title {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feedback-form {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.feedback-form__container {
+  width: 320px;
+}
+
+.feedback-form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.feedback-form__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.feedback-form__about {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__button {
+  width: 280px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.form__required {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.form-blank__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-choice__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-data__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-data__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-comment__field-label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-comment__field-control {
+  width: 280px;
+  height: 150.52px;
+}
+
+.form-add__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-add__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.main-catalog {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-catalog__caption {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog-produce__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.produce-table__row {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-more__wrapper {
+  width: 280px;
+  min-height: 158px;
+  margin: 0 auto;
+}
+
+.catalog-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog-more__about {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-more__button--all {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.extra-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.extra-goods__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.extra-goods__caption {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-goods__row {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.catalog-prize__wrapper {
+  width: 280px;
+  min-height: 289px;
+  margin: 0 auto;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalog-prize__title {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.address__wrapper--catalog {
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
