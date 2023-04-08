@@ -7,24 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="#!">
   <link rel="icon" type="image/png" sizes="32x32" href="#!">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
   <header class="header">
-    <a class="header__logo logo" href="#!">
-      <img class="header__image-pic" src="#!" width="" height="" alt="Логотип Cat Energy.">
-      <img class="header__image-slogan" src="#!" width="" height="" alt="Логотип Cat Energy.">
-    </a>
-    <nav class="header__navigation navigation">
-      <button class="navigation__toggle" type="button">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="#!">
+        <img class="header__image-pic" src="../img/logo-mobile.svg" width="34" height="34" alt="Логотип Cat Energy.">
+      </a>
+      <a class="header__logo logo" href="#!">
+        <img class="header__image-slogan" src="../img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      </a>
+      <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации.</span>
       </button>
-      <ul class="navigation__list">
+    </div>
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list navigation__list--close">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item navigation__item--current">
-          <a class="navigation__link">Каталог продукции</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">Подбор программы</a>
@@ -252,13 +257,15 @@
     </section>
     <section class="address">
       <div class="address__wrapper">
-        <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="address__invitation">
-          <span class="address__title">Приглашаем к сотрудничеству дилеров!</span>
-          <p class="address__description">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </p>
+        <div class="address__wrapper-container">
+          <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
+          <address class="address__invitation">
+            <span class="address__title">Приглашаем к сотрудничеству дилеров!</span>
+            <p class="address__description">ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург
+            </p>
+        </div>
         </address>
         <div class="address__map map-invitation">
           <iframe class="map-invitation__source"
@@ -273,7 +280,7 @@
       <h2 class="visually-hidden">Контактные данные для связи</h2>
       <div class="footer__wrapper">
         <a class="footer__logo logo" href="#!">
-          <img class="footer__image-slogan" src="#!" width="" height="" alt="Логотип Cat Energy.">
+          <img class="header__image-slogan" src="../img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </a>
         <ul class="footer__social social-list">
           <li class="social-list__item">
@@ -302,3 +309,5 @@
     </section>
   </footer>
 </body>
+
+</html>
