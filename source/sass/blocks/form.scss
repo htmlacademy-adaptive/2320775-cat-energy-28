@@ -1,3 +1,22 @@
 .form__fieldset {
   border: none;
 }
+
+.form__button {
+  @include oswald400;
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #68b738;
+  padding: 7px 44px;
+  border: 0;
+}
+
+.form__required {
+  @include lato400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
