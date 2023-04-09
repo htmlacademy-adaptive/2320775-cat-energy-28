@@ -1,6 +1,6 @@
 .main-catalog {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $color-bg-white;
+  color: $color-default-black;
 }
 
 .main-catalog__wrapper {
@@ -11,6 +11,7 @@
 .main-catalog__caption {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }

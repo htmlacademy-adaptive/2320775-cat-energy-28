@@ -21,11 +21,12 @@
 .offer__title {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   padding-top: 27px;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: $color-default-white;
 }
 
 .offer__about {
@@ -35,7 +36,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 29px;
-  color: #ffffff;
+  color: $color-default-white;
 }
 
 //Пока нет картинки резерв места //

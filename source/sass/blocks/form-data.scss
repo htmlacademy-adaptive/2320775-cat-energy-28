@@ -2,7 +2,7 @@
   font-family: $oswald400;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $color-default-black;
 }
 
 .form-data__list {
@@ -11,5 +11,5 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $color-desc;
 }

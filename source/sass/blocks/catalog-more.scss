@@ -7,20 +7,23 @@
 .catalog-more__title {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-title1;
 }
 
 .catalog-more__about {
   @include title;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  margin-bottom: 21px;
+  color: $color-desc;
 }
 
 .catalog-more__button--all {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $color-desc;
+  background-color: $color-bg-gray;
 }

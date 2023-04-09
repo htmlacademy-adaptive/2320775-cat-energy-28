@@ -1,6 +1,6 @@
 .example__wrapper {
   width: 320px;
-  background-color: #eaeaea;
+  background-color: $color-bg-grey;
 }
 
 .example__description {
@@ -11,16 +11,17 @@
 .example__title {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
-  color: #000000;
+  color: $color-default-black;
 }
 
 .example__about {
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-desc;
 }
 
 .example__results {
@@ -31,13 +32,14 @@
 .example__count {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-default-black;
 }
 
 .example__slider {
   width: 320px;
-  background-color: #eaeaea;
+  background-color: $color-bg-grey;
 }

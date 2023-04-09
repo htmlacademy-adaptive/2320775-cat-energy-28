@@ -1,8 +1,9 @@
 .catalog-produce__title {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
+  color: $color-title2;
 }

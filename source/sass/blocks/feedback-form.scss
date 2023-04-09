@@ -1,6 +1,6 @@
 .feedback-form {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $color-bg-white;
+  color: $color-default-black;
 }
 
 .feedback-form__container {
@@ -15,6 +15,7 @@
 .feedback-form__title {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
@@ -22,6 +23,7 @@
 .feedback-form__about {
   @include title;
   font-family: $oswald400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
