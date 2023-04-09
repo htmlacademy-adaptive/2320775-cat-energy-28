@@ -1,6 +1,6 @@
 .catalog-produce__title {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

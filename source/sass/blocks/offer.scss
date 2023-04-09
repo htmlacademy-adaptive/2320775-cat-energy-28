@@ -19,8 +19,8 @@
 }
 
 .offer__title {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 36px;
   line-height: 36px;
   padding-top: 27px;
@@ -29,8 +29,8 @@
 }
 
 .offer__about {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

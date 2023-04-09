@@ -4,16 +4,16 @@
 }
 
 .extra-goods__title {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
 }
 
 .extra-goods__caption {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -21,7 +21,6 @@
 }
 
 .extra-goods__row {
-  @include lato400;
   font-size: 14px;
   line-height: 14px;
   color: #444444;

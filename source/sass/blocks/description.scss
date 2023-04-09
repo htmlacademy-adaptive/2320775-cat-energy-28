@@ -5,7 +5,7 @@
 
 .description__title {
   @include title;
-  @include oswald400;
+  font-family: $oswald400;
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
@@ -14,7 +14,6 @@
 }
 
 .description__list {
-  @include lato400;
   @include list-reset;
   font-size: 14px;
   line-height: 18px;

@@ -9,8 +9,8 @@
 }
 
 .main-catalog__caption {
-  @include oswald400;
   @include title;
+  font-family: $oswald400;
   font-size: 36px;
   line-height: 36px;
 }
