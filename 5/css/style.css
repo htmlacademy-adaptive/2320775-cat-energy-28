@@ -135,12 +135,11 @@ a {
 }
 
 .offer__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   padding-top: 27px;
@@ -149,12 +148,10 @@ a {
 }
 
 .offer__about {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -178,8 +175,6 @@ a {
 
 .button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   display: block;
   padding: 7px 44px;
   margin-bottom: 20px;
@@ -211,7 +206,6 @@ a {
   padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -220,9 +214,6 @@ a {
 }
 
 .features__about {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   width: 227px;
@@ -243,19 +234,15 @@ a {
   padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+  margin-bottom: 40px;
   color: #000000;
 }
 
 .description__list {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -280,7 +267,6 @@ a {
   padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -289,9 +275,6 @@ a {
 }
 
 .example__about {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -307,7 +290,6 @@ a {
   padding: 0;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -340,10 +322,14 @@ a {
   margin: 0 auto;
 }
 
+.address__wrapper--catalog {
+  background-color: #f2f2f2;
+}
+
 .address__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -351,9 +337,7 @@ a {
 }
 
 .address__description {
-  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
@@ -375,9 +359,6 @@ a {
 }
 
 .footer__academy-title {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #444444;
@@ -404,23 +385,21 @@ a {
 }
 
 .feedback-form__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
 .feedback-form__about {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -440,8 +419,6 @@ a {
 
 .form__required {
   font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -452,8 +429,6 @@ a {
   padding: 0;
   list-style-type: none;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -465,8 +440,6 @@ a {
   padding: 0;
   list-style-type: none;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -475,8 +448,6 @@ a {
 
 .form-data__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -487,8 +458,6 @@ a {
   padding: 0;
   list-style-type: none;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -497,8 +466,6 @@ a {
 
 .input {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -507,8 +474,6 @@ a {
 
 .form-comment__field-label {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -521,8 +486,6 @@ a {
 
 .form-add__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -533,8 +496,6 @@ a {
   padding: 0;
   list-style-type: none;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -552,23 +513,21 @@ a {
 }
 
 .main-catalog__caption {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
 .catalog-produce__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -576,9 +535,6 @@ a {
 }
 
 .produce-table__row {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -591,27 +547,25 @@ a {
 }
 
 .catalog-more__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   color: #111111;
 }
 
 .catalog-more__about {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 21px;
   color: #444444;
 }
 
@@ -626,24 +580,22 @@ a {
 }
 
 .extra-goods__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
 }
 
 .extra-goods__caption {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -651,9 +603,6 @@ a {
 }
 
 .extra-goods__row {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -667,18 +616,12 @@ a {
 }
 
 .catalog-prize__title {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: #ffffff;
-}
-
-.address__wrapper--catalog {
-  background-color: #f2f2f2;
 }
 /*# sourceMappingURL=style.css.map */
