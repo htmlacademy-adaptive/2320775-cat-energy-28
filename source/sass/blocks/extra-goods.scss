@@ -5,6 +5,7 @@
 
 .extra-goods__title {
   @include title;
+  margin-bottom: 49px;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 24px;
