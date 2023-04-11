@@ -1,0 +1,45 @@
+.example__wrapper {
+  width: 320px;
+  background-color: $color-bg-grey;
+}
+
+.example__description {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__title {
+  @include title;
+  font-family: $oswald400;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: $color-default-black;
+}
+
+.example__about {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-desc;
+}
+
+.example__results {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__count {
+  @include title;
+  font-family: $oswald400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-default-black;
+}
+
+.example__slider {
+  width: 320px;
+  background-color: $color-bg-grey;
+}

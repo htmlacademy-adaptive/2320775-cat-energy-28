@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+//GLOBAL//
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/base.scss";
+@import "global/visually-hidden.scss";
+
+//BLOCKS //
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/offer.scss";
+@import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/main-wrapper.scss";
+@import "blocks/description.scss";
+@import "blocks/example.scss";
+@import "blocks/slider-example.scss";
+@import "blocks/address.scss";
+@import "blocks/map-invitation.scss";
+@import "blocks/footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/form.scss";
+@import "blocks/form-blank.scss";
+@import "blocks/form-choice.scss";
+@import "blocks/form-data.scss";
+@import "blocks/input.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form-add.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/produce-table.scss";
+@import "blocks/catalog-more.scss";
+@import "blocks/extra-goods.scss";
+@import "blocks/catalog-prize.scss";
