@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.extra-goods__list {
+  @include list-reset;
+}
+
 .extra-goods__title {
   @include title;
   margin-bottom: 49px;
