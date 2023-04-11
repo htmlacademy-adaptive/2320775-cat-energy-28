@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-.extra-goods__list {
-  @include list-reset;
-}
-
 .extra-goods__title {
   @include title;
   margin-bottom: 49px;
@@ -17,7 +13,7 @@
   color: $color-default-black;
 }
 
-.extra-goods__caption {
+.extra-goods__row--caption {
   @include title;
   font-family: $oswald400;
   font-weight: 400;
@@ -28,6 +24,7 @@
 }
 
 .extra-goods__row {
+  display: grid;
   font-size: 14px;
   line-height: 14px;
   color: $color-desc;
