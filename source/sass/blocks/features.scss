@@ -19,7 +19,20 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $color-default-black;
+
+    &--img-slim,
+    &--img-pro {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-color: #68b738;
+    content: ""
+  }
 }
+
 
 .features__about {
   font-size: 14px;
