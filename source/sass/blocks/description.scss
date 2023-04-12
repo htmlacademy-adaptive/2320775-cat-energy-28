@@ -16,8 +16,64 @@
 
 .description__list {
   @include list-reset;
+  display: grid;
+  grid-gap: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $color-desc;
   margin-bottom: 49px;
+}
+
+.description__item {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-gap: 20px;
+}
+
+.description__item--leaf {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--water {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--tableware {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
+}
+
+.description__item--clock {
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: $color-bg-green;
+    content: "";
+  }
 }
