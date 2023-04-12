@@ -18,3 +18,13 @@
   padding: 22px 20px 24px;
   border-top: 1px solid $color-border-list;
 }
+
+.navigation__toggle {
+  width: 24px;
+  height: 18px;
+  border: 0;
+  color: $color-default-black;
+  background: url("../img/logo_hamburger.svg");
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
