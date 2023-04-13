@@ -6,6 +6,10 @@
 .main-catalog__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .main-catalog__caption {
@@ -14,10 +18,29 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 65px;
+    margin-bottom: 82px;
+  }
 }
 
 .main-catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-gap: 60px;
+  }
+}
+
+.main-catalog__item {
+  @media (min-width: $tablet-width) {
+    min-height: 511px;
+  }
 }
 
 .main-catalog__title {

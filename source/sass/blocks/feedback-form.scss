@@ -5,11 +5,20 @@
 
 .feedback-form__container {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .feedback-form__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-top: 66px;
+  }
 }
 
 .feedback-form__title {
@@ -27,4 +36,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 }
+
+
