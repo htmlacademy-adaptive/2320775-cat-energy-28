@@ -1,6 +1,10 @@
 .description__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .description__title {
@@ -22,12 +26,25 @@
   line-height: 18px;
   color: $color-desc;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+
 }
 
 .description__item {
   display: grid;
   grid-template-columns: 60px auto;
   grid-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 31px;
+    height: 280px;
+    align-content: center;
+  }
 }
 
 .description__item--leaf {
