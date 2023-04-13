@@ -1,3 +1,19 @@
 .social-list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.social-list__academy-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-desc;
 }

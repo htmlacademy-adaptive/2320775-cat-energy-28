@@ -28,3 +28,25 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navigation__link {
+    padding: 0;
+    border: none;
+  }
+  .navigation__toggle {
+    display: none;
+  }
+
+}
+
