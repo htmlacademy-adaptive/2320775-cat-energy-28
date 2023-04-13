@@ -3,10 +3,32 @@
   margin: 0 auto;
   min-height: 240px;
   background-color: $color-bg-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 147px;
+  }
 }
 
 .footer__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
+.footer__social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

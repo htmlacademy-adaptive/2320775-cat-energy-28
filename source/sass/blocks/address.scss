@@ -2,6 +2,10 @@
   width: 320px;
   margin-bottom: 40px;
   background-color: $color-bg-white;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .address__wrapper--form {
@@ -42,4 +46,8 @@
 .address__map {
   width: 320px;
   background-color: $color-bg-white;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
