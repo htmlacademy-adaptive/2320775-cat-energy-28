@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
 }
 
 .address__wrapper--form {
@@ -20,6 +25,18 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 565;
+    width: 565px;
+    min-height: 198px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: $color-bg-white;
+    transform: translate(68px, 73px);
+  }
 }
 
 .address__wrapper--catalog {
@@ -49,5 +66,9 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }

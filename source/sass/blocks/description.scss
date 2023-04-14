@@ -8,8 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin: 0 auto;
   }
-
 }
 
 .description__title {
@@ -36,6 +36,12 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 137px;
     row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-gap: 94px;
   }
 }
 
