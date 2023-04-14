@@ -26,6 +26,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    padding-left: 110px;
     display: block;
   }
 }
@@ -41,8 +42,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 76px;
+    padding-left: 110px;
     background-color: $color-bg-white;
-
   }
 }
 
@@ -112,8 +113,7 @@
     width: 560px;
     height: 512px;
     position: absolute;
-    right: 0;
-    transform: translate(-180px, -448px);
+    transform: translate(800px, -420px);
   }
 }
 
