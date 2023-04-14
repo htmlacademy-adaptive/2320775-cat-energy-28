@@ -3,6 +3,10 @@
   min-height: 289px;
   margin: 0 auto;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .catalog-prize__title {

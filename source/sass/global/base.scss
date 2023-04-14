@@ -8,12 +8,14 @@ body {
   line-height: 18px;
   color: #444444;
   background-color: #f2f2f2;
-}
 
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+    }
 }
 
 img {

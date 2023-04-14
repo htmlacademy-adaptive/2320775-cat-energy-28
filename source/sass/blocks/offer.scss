@@ -11,6 +11,12 @@
     width: 768px;
   }
 
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1220px;
+    grid-template-columns: min-content min-content min-content;
+    margin-bottom: 82px;
+  }
 }
 
 .offer__review {
@@ -26,6 +32,10 @@
       width: 768px;
       min-height: 260px;
       background: $color-default-white;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 610px;
     }
 }
 
@@ -67,6 +77,12 @@
     height: 609px;
     background: $color-default-white;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    background: $color-bg-green;
+  }
 }
 
 .offer__button {
@@ -74,5 +90,9 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+  }
 }
 
