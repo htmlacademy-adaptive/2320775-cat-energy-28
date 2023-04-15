@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .feedback-form__wrapper {
@@ -19,6 +23,10 @@
     width: 708px;
     padding-top: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .feedback-form__title {
@@ -27,6 +35,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .feedback-form__about {
@@ -38,6 +52,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 66px;
+    text-align: left;
   }
 }
