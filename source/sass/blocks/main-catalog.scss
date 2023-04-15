@@ -19,7 +19,6 @@
 }
 
 .main-catalog__caption {
-  @include title;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 36px;
@@ -40,6 +39,7 @@
 
 .main-catalog__list {
   @include list-reset;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     display: grid;

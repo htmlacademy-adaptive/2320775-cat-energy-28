@@ -25,6 +25,13 @@
   width: 280px;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    background-color: $color-bg-gray;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   @media (min-width: $desktop-width) {
     width: 565;
     width: 565px;
@@ -36,10 +43,6 @@
     background-color: $color-bg-white;
     transform: translate(68px, 73px);
   }
-}
-
-.address__wrapper--catalog {
-  background-color: $color-bg-gray;
 }
 
 .address__title {
