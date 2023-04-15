@@ -9,6 +9,12 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 76px;
   }
 }
 
@@ -24,6 +30,11 @@
     line-height: 60px;
     padding-top: 65px;
     margin-bottom: 82px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -34,6 +45,13 @@
     display: grid;
     grid-template-columns: 324px 324px;
     grid-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 63px;
   }
 }
 

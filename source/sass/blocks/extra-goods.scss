@@ -7,6 +7,11 @@
     width: 708px;
     margin-bottom: 69px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-bottom: 85px;
+  }
 }
 
 .extra-goods__title {
@@ -17,6 +22,12 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-default-black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
 }
 
 .extra-goods__row--caption {
@@ -34,11 +45,18 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-desc;
+
+  @media (min-width: $desktop-width) {
+    display: table-row;
+  }
 }
 
 .extra-goods__table {
+  display: grid;
 
-  @media (min-width: $tablet-width) {
-    display: grid;
+  @media (min-width: $desktop-width) {
+    display: table;
+    width: 896px;
+    min-height: 288px;
   }
 }

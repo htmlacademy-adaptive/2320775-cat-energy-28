@@ -1,4 +1,4 @@
-.example--container {
+.example__container {
   min-height: 659px;
   width: 320px;
   background-color: $color-bg-grey;
@@ -101,6 +101,11 @@
 }
 
 .example__slider {
+
+  .slider-example__item {
+    @include list-reset;
+  }
+
   width: 320px;
   background-color: $color-bg-grey;
 
@@ -116,6 +121,3 @@
     transform: translate(800px, -420px);
   }
 }
-
-
-
