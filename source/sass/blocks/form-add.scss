@@ -1,3 +1,9 @@
+.form-add {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
 .form-add__title {
   margin-bottom: 34px;
   font-family: $oswald400;
@@ -17,4 +23,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-desc;
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
 }
