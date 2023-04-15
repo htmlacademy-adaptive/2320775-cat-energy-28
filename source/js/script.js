@@ -5,4 +5,3 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   navToggle.classList.toggle('close');
 });
-
