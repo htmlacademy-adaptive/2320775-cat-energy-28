@@ -4,9 +4,9 @@
   flex-direction: column;
   text-align: center;
 
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .navigation__list {
@@ -15,12 +15,12 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .navigation__link {
@@ -29,8 +29,8 @@
   padding: 22px 20px 24px;
   border-top: 1px solid $color-border-list;
 
-    @media (min-width: $tablet-width) {
-      padding: 0;
-      border: none;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }

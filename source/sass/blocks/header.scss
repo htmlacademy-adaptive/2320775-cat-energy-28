@@ -6,14 +6,14 @@
   color: $color-default-black;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-family: $oswald400;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     font-family: $oswald400;
     font-weight: 400;
     font-size: 20px;
@@ -27,7 +27,7 @@
   margin: 0 auto;
   background-color: $color-bg-white;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 768px;
     min-height: 52px;
     display: flex;
@@ -36,7 +36,7 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     padding-top: 53px;
     justify-content: space-between;
@@ -53,14 +53,14 @@
   padding-top: 10px;
   padding-bottom: 19px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 174px;
     margin: 0;
     padding: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 202px;
     margin: 0;
@@ -72,12 +72,12 @@
   width: 320px;
   margin: 0 auto;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 440px;
     margin-left: 90px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 478px;
     min-height: 40px;
     margin: 0;
@@ -93,7 +93,7 @@
   background: url("../img/logo_hamburger.svg");
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

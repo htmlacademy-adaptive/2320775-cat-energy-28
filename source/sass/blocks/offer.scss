@@ -28,15 +28,15 @@
   min-height: 302px;
   background: rgba(104, 183, 56, 0.85);
 
-    @media (min-width: $tablet-width) {
-      width: 768px;
-      min-height: 260px;
-      background: $color-default-white;
-    }
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 260px;
+    background: $color-default-white;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 610px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 610px;
+  }
 }
 
 .offer__title {

@@ -18,12 +18,10 @@
 
 .address__wrapper-container {
   width: 280px;
-  margin: 0px auto;
+  margin: 0 auto;
   min-height: 112px;
   display: flex;
   align-items: center;
-  width: 280px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     background-color: $color-bg-gray;
@@ -33,7 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 565;
     width: 565px;
     min-height: 198px;
     margin: 0;
