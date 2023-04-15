@@ -167,9 +167,8 @@ a {
 
 .header__toggle {
   width: 24px;
-  height: 18px;
+  height: 20px;
   border: 0;
-  color: #000000;
   background: url("../img/logo_hamburger.svg");
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -177,6 +176,15 @@ a {
   .header__toggle {
     display: none;
   }
+}
+
+.header__toggle.close {
+  width: 24px;
+  height: 20px;
+  border: 0;
+  background: url("../img/logo_cross.svg");
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .logo {
@@ -202,6 +210,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  display: none;
 }
 @media (min-width: 768px) {
   .navigation__list {
@@ -210,6 +219,13 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.navigation__list.active {
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  width: 320px;
 }
 
 .navigation__link {
