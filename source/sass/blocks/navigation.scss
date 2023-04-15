@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -21,6 +22,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.navigation__list.active {
+  display: flex;
+  position: absolute;
+  background-color: $color-bg-white;
+  width: 320px;
 }
 
 .navigation__link {
@@ -34,3 +42,5 @@
     border: none;
   }
 }
+
+
