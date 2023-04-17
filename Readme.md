@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анна Рябцева](https://up.htmlacademy.ru/adaptive/28/user/2320775).
-* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
+* Наставник: [Владимир Вавщик](https://htmlacademy.ru/profile/id1610171).
 
 ---
 
