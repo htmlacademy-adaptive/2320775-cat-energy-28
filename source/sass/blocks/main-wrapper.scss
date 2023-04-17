@@ -1,12 +1,13 @@
 .main-wrapper {
+  margin: 0 auto;
   flex-grow: 1;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    max-width: 1440px;
   }
 }

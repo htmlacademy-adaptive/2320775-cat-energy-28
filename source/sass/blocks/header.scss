@@ -23,35 +23,33 @@
 }
 
 .header__container {
-  width: 320px;
+  max-width: 320px;
+  min-height: 65px;
   margin: 0 auto;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    max-width: 768px;
     min-height: 52px;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding-top: 53px;
-    justify-content: space-between;
+    max-width: 1440px;
   }
 }
 
-.header__wrapper {
-  margin: 0 auto;
+.header__navigation-logo {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  width: 280px;
-  padding-top: 10px;
-  padding-bottom: 19px;
+  justify-content: space-between;
+  padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -68,7 +66,7 @@
   }
 }
 
-.header__navigation {
+.header__navigation-menu {
   width: 320px;
   margin: 0 auto;
 
@@ -85,7 +83,61 @@
   }
 }
 
-.header__toggle {
+.header__navigation-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  //Включить-выключить меню навигации\\
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header__navigation-list.active {
+  display: flex;
+  position: absolute;
+  background-color: $color-bg-white;
+  width: 320px;
+  animation: nav_animation 0.5s;
+
+  @keyframes nav_animation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.header__navigation-link {
+  display: block;
+  color: inherit;
+  padding: 22px 20px 24px;
+  border-top: 1px solid $color-border-list;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.header__navigation-toggle {
   width: 24px;
   height: 20px;
   border: 0;
@@ -97,7 +149,7 @@
   }
 }
 
-.header__toggle.close {
+.header__navigation-toggle.close {
   width: 24px;
   height: 20px;
   border: 0;
@@ -105,3 +157,4 @@
   background-repeat: no-repeat;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+
