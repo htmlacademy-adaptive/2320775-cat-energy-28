@@ -48,7 +48,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
@@ -66,7 +65,13 @@
   }
 }
 
+.header__navigation-icon:nth-child(2) {
+  padding-left: 57px;
+}
+
+
 .header__navigation-menu {
+  position: relative;
   width: 320px;
   margin: 0 auto;
 
@@ -83,47 +88,90 @@
   }
 }
 
+.header__navigation-menu--closed .header__navigation-toggle {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  border: 0;
+  top: -35px;
+  right: 35px;
+  display: block;
+  background: url("../../img/svg/nav_hamburger.svg");
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.header__navigation-menu--opened .header__navigation-toggle {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  border: 0;
+  top: -35px;
+  right: 35px;
+  display: block;
+  background: url("../../img/svg/nav_cross.svg");
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
 .header__navigation-list {
   @include list-reset;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
+  text-align: center;
+}
 
-  //Включить-выключить меню навигации\\
-  @media (min-width: $mobile-width) {
+@media (min-width: $mobile-width) {
+  .header__navigation-menu--closed .header__navigation-list {
     display: none;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
+@media (min-width: $mobile-width) {
+  .header__navigation-menu--opened .header__navigation-toggle{
+    display: none;
   }
 }
 
-.header__navigation-list.active {
-  display: flex;
-  position: absolute;
-  background-color: $color-bg-white;
-  width: 320px;
-  animation: nav_animation 0.5s;
+  //Включить-выключить меню навигации\\
+//   @media (min-width: $mobile-width) {
+//     display: none;
+//   }
 
-  @keyframes nav_animation {
-    from {
-      opacity: 0;
-    }
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
 
-    to {
-      opacity: 1;
-    }
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     display: flex;
+//   }
+//
+
+
+// .header__navigation-list.active {
+//   display: flex;
+//   position: absolute;
+//   background-color: $color-bg-white;
+//   width: 320px;
+//   animation: nav_animation 0.5s;
+
+//   @keyframes nav_animation {
+//     from {
+//       opacity: 0;
+//     }
+
+//     to {
+//       opacity: 1;
+//     }
+//   }
+// }
 
 .header__navigation-link {
   display: block;
@@ -131,29 +179,8 @@
   padding: 22px 20px 24px;
   border-top: 1px solid $color-border-list;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    border: none;
-  }
-}
-
-.header__navigation-toggle {
-  width: 24px;
-  height: 20px;
-  border: 0;
-  background: url("../img/logo_hamburger.svg");
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.header__navigation-toggle.close {
-  width: 24px;
-  height: 20px;
-  border: 0;
-  background: url("../img/logo_cross.svg");
-  background-repeat: no-repeat;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  //   border: none;
+  // }
 }
