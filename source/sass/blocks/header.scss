@@ -87,7 +87,6 @@
   }
 }
 
-//Открытое меню в потоке при отключённом JavaScript\\
 .header__navigation-list {
   @include list-reset;
   display: flex;
@@ -99,14 +98,6 @@
 
 .header__navigation-toggle {
   display: none;
-}
-
-.header__navigation-menu--nojs .header__navigation-toggle {
-  display: none;
-}
-
-.header__navigation-menu--nojs .header__navigation-list {
-  display: block;
 }
 
 //Открытое меню вне потока при включённом JavaScript\
@@ -164,15 +155,15 @@
   }
 }
 
+//Открытое меню в потоке при отключённом JavaScript\\
+.header__navigation-menu--nojs .header__navigation-toggle {
+  display: none;
+}
 
-
-
-// @media (min-width: $mobile-width) {
-//   .header__navigation-menu--opened .header__navigation-toggle{
-//     display: none;
-//   }
-// }
-
+.header__navigation-menu--nojs .header__navigation-list {
+  position: static;
+  display: block;
+}
 
 //   @media (min-width: $tablet-width) {
 //     display: flex;
@@ -186,8 +177,6 @@
 //   }
 //
 
-
-// .header__navigation-list.active {
 
 .header__navigation-link {
   display: block;
