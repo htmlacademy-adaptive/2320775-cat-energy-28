@@ -94,13 +94,20 @@
   flex-wrap: wrap;
   align-items: stretch;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
-.header__navigation-toggle {
-  display: none;
-}
-
-//Открытое меню вне потока при включённом JavaScript\
+//Открытое меню вне потока при включённом JavaScript\\
 .header__navigation-menu--active .header__navigation-toggle {
   position: absolute;
   width: 24px;
@@ -113,6 +120,10 @@
   background-repeat: no-repeat;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__navigation-menu--inactive .header__navigation-toggle {
@@ -127,31 +138,24 @@
   background-repeat: no-repeat;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__navigation-menu--active .header__navigation-list {
   position: absolute;
   display: flex;
-  position: absolute;
   background-color: $color-bg-white;
   width: 320px;
-  animation: nav_animation 0.5s;
-
-  @keyframes nav_animation {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
 }
 
-//Закрытое меню\\
-@media (min-width: $mobile-width) {
-  .header__navigation-menu--inactive .header__navigation-list {
-    display: none;
+.header__navigation-menu--inactive .header__navigation-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -160,32 +164,14 @@
   display: none;
 }
 
-.header__navigation-menu--nojs .header__navigation-list {
-  position: static;
-  display: block;
-}
-
-//   @media (min-width: $tablet-width) {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     display: flex;
-//   }
-//
-
-
 .header__navigation-link {
   display: block;
   color: inherit;
   padding: 22px 20px 24px;
   border-top: 1px solid $color-border-list;
 
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  //   border: none;
-  // }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
