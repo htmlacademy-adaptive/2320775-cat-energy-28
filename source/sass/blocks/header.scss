@@ -35,7 +35,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +51,6 @@
   padding: 10px 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     width: 174px;
     margin: 0;
     padding: 0;
@@ -79,8 +78,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    @include reset;
     width: 440px;
-    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,7 +184,18 @@
   border-top: 1px solid $color-border-list;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    position: relative;
+    padding: 18px 0 12px;
     border: none;
+
+      &--checked::before {
+      position: absolute;
+      height: 2px;
+      bottom: 1px;
+      left: 0;
+      right: 0;
+      background-color: $color-bg-green;
+      content: "";
+    }
   }
 }
