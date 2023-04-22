@@ -79,7 +79,10 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 162px 162px 72px auto;
+    column-gap: 42px;
+    align-items: center;
+    justify-items: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +99,11 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example__term {
@@ -104,6 +112,12 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 15px 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__definition {
@@ -114,6 +128,17 @@
   text-align: center;
   text-transform: lowercase;
   background-color: $color-bg-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $color-bg-white;
+
+    &--xl {
+      width: 145px;
+    }
+  }
 }
 
 .example__count {
@@ -127,7 +152,10 @@
   color: $color-default-black;
 
   @media (min-width: $tablet-width) {
-    grid-column: 3;
+    grid-column: 4 / 5;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
