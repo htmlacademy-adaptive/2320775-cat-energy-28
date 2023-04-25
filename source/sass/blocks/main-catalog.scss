@@ -94,6 +94,12 @@
       display: block;
       background-color: $color-bg-white;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 180px;
+      min-height: 430px;
+      padding: 0 30px 40px 35px;
+    }
   }
 
   &::before {
@@ -171,5 +177,11 @@
     width: 145px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    font-size: 20px;
+    line-height: 21px;
   }
 }
