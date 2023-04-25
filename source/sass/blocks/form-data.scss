@@ -42,7 +42,9 @@
 }
 
 .form-data__item {
-  width: 569px;
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }
 
 .form-data__field {

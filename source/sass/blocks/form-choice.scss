@@ -55,17 +55,16 @@
 }
 
 .form-choice__field-control:checked + .form-choice__mark::after  {
-    position: absolute;
-    transform: translate(65%, 65%);
-    width: 13px;
-    height: 13px;
-    background-color: $color-bg-green;
-    border-radius: 50%;
-    content: "";
+  position: absolute;
+  transform: translate(65%, 65%);
+  width: 13px;
+  height: 13px;
+  background-color: $color-bg-green;
+  border-radius: 50%;
+  content: "";
 
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-    }
-
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
