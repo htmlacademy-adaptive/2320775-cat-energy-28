@@ -39,7 +39,7 @@
     &:last-child {
       margin-bottom: 45px;
 
-        @media (min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         margin-bottom: 0;
       }
     }
@@ -209,6 +209,7 @@
     .features__link-line {
       background-image: url("../img/svg/arrow-big.svg");
     }
+
     opacity: 0.4;
   }
 }

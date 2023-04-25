@@ -54,7 +54,7 @@
   }
 }
 
-.form-choice__field-control:checked + .form-choice__mark::after  {
+.form-choice__field-control:checked + .form-choice__mark::after {
   position: absolute;
   transform: translate(65%, 65%);
   width: 13px;

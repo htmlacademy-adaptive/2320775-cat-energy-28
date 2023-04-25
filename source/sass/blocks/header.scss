@@ -139,6 +139,7 @@
   background-color: $color-bg-white;
   width: 320px;
   animation: nav_animation 0.6s;
+
   @keyframes nav_animation {
     from {
       opacity: 0;
@@ -161,9 +162,6 @@
     justify-content: space-around;
     column-gap: 10px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 //Открытое меню в потоке при отключённом JavaScript\\
@@ -182,7 +180,7 @@
     padding: 18px 0 12px;
     border: none;
 
-      &--checked::before {
+    &--checked::before {
       position: absolute;
       height: 2px;
       bottom: 1px;

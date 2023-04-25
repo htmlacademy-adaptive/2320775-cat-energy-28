@@ -60,18 +60,18 @@
 
   &::before,
   &::after {
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: $color-border-list4;
-  content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $color-border-list4;
+    content: "";
 
-  @media (min-width: $tablet-width) {
-    width: 60px;
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
   }
-}
 
   &::after {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }

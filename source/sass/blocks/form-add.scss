@@ -54,7 +54,7 @@
   border: 1px solid $color-border-list4;
 }
 
-.form-add__field-control:checked + .form-add__mark::before  {
+.form-add__field-control:checked + .form-add__mark::before {
   position: absolute;
   transform: translate(30%, 30%);
   width: 18px;
