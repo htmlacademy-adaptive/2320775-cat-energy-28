@@ -6,13 +6,39 @@
 
 .form-blank__list {
   @include list-reset;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 14px;
   margin-bottom: 23px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-desc;
+
+  &::after {
+    width: 320px;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translate(-20px, 10px);
+    content: "";
+  }
+}
+
+.form-blank__field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-blank__field-label {
+  margin-right: 13px;
+}
+
+.form-blank__field-control {
+  height: 45px;
+  flex-grow: 1;
 }

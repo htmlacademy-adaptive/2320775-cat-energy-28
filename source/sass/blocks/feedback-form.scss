@@ -37,11 +37,21 @@
   font-size: 36px;
   line-height: 36px;
 
+  &::before {
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: $color-border-list2;
+    transform: translate(-20px, -37px);
+    content: "";
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 }
+
 
 .feedback-form__about {
   @include title;
