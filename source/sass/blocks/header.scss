@@ -139,6 +139,7 @@
   background-color: $color-bg-white;
   width: 320px;
   animation: nav_animation 0.6s;
+  z-index: 1;
 
   @keyframes nav_animation {
     from {

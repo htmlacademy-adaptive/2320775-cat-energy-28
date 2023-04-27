@@ -28,7 +28,18 @@
   align-items: center;
   width: 320px;
   min-height: 302px;
-  background: rgba(104, 183, 56, 0.85);
+  background: $color-hv-green;
+
+  &::after {
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background-image: url("../img/png/background-mobile.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0.1;
+    content: "";
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -44,6 +55,28 @@
     width: 420px;
     z-index: 2;
     margin: 0;
+  }
+}
+
+.offer__picture {
+  position: absolute;
+  transform: translateY(180px);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 708px;
+    height: 609px;
+    background: $color-default-white;
+    transform: translateY(-54px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    background: $color-bg-white;
+    transform: translate(530px, 127px);
+    z-index: 1;
+    position: absolute;
   }
 }
 
@@ -84,29 +117,8 @@
   }
 }
 
-//Пока нет картинки резерв места //
-.offer__logo {
-  height: 270px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 708px;
-    height: 609px;
-    background: $color-default-white;
-    transform: translateY(-54px);
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    background: $color-bg-white;
-    transform: translate(530px, 127px);
-    z-index: 1;
-    position: absolute;
-  }
-}
-
 .offer__button {
+  margin-top: 138px;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
