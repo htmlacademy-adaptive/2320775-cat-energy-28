@@ -1,8 +1,12 @@
-.example__container {
-  min-height: 659px;
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
   background-color: $color-bg-grey;
+}
 
+.example__container {
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
@@ -193,23 +197,40 @@
   }
 }
 
-.example__slider {
-  width: 320px;
-  background-color: $color-bg-grey;
+// .example__slider {
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    min-height: 462px;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 560px;
-    height: 512px;
-    position: absolute;
-    transform: translate(800px, -420px);
-  }
-}
+//   // @media (min-width: $tablet-width) {
+//   //   width: 768px;
+//   //   min-height: 462px;
+//   // }
+
+//   // @media (min-width: $desktop-width) {
+//   //   width: 560px;
+//   //   height: 512px;
+//   //   position: absolute;
+//   //   transform: translate(800px, -420px);
+//   // }
+// }
 
 .example__slider-item {
   @include list-reset;
+  position: relative;
+  width: 280px;
+  height: 256px;
 }
+
+.example__slider-image-xl {
+  position: absolute;
+  width: 280px;
+  height: 256px;
+}
+
+.example__slider-image-xs {
+  position: absolute;
+  height: 256px;
+  width: 280px;
+  background-color: $color-bg-grey;
+  clip: rect(0 auto auto 140px );
+}
+
