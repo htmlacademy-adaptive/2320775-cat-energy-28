@@ -14,7 +14,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     display: block;
     width: 1220px;
     margin-left: 190px;
@@ -48,18 +47,19 @@
 
     @media (min-width: $desktop-width) {
       display: inherit;
+      top: 0;
+      right: 0;
       width: 720px;
       height: 694px;
       background-image: url("../img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
-      transform: translate(530px, -480px);
+
     }
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: block;
     width: 420px;
     min-height: 181px;
@@ -73,10 +73,11 @@
 
     &::before {
       position: absolute;
+      top: 0;
+      right: 0;
       width: 720px;
       height: 694px;
       background: $color-bg-green;
-      transform: translate(530px, -250px);
       content: "";
     }
   }
