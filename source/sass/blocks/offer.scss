@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     display: grid;
+    margin-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,11 +35,15 @@
     position: absolute;
     width: 320px;
     height: 302px;
-    background-image: url("../img/png/background-mobile.png");
+    background-image: url("../img/jpg/background-mobile.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
     opacity: 0.1;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -63,21 +68,18 @@
   transform: translateY(170px);
 
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 708px;
-    height: 609px;
-    background: $color-default-white;
-    transform: translateY(-54px);
+    transform: translate(25px, 407px);
+    background: #ffffff;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    background: $color-bg-white;
-    transform: translate(530px, 127px);
-    z-index: 1;
-    position: absolute;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 552px;
+  //   height: 499px;
+  //   background: $color-bg-white;
+  //   transform: translate(530px, 127px);
+  //   z-index: 1;
+  //   position: absolute;
+  // }
 }
 
 .offer__title {
@@ -127,6 +129,7 @@
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
     margin-left: 80px;
+    margin-top: 0;
     z-index: 1;
   }
 

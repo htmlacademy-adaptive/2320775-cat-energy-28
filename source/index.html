@@ -48,10 +48,10 @@
           <p class="offer__about">Занялся собой? Займись котом!</p>
         </div>
         <picture class="offer__picture">
-          <img class="offer__logo" src="./img/png/can-mobile.png" width="280" height="270" alt="Упаковка корма в стакане
+          <source srcset="./img/png/can-desktop.png" width="552" height="499" media="(min-width: 1440px)">
+          <source srcset="./img/png/can-tablet.png" width="709" height="609" media="(min-width: 768px)">
+          <img src="./img/png/can-mobile.png" width="280" height="270" alt="Упаковка корма в стакане
             Cat Energy Pro с курицей 500 грамм оранжевая.">
-          <source media="(min-width: 768px)" srcset="./img/png/can-tablet.png">
-          <source media="(min-width: 1440px)" srcset="./img/png/can-desktop.png">
         </picture>
         <a class="offer__button button" href="form.html">Подобрать программу</a>
       </div>
@@ -152,14 +152,12 @@
           <figure class="example__slider-item">
             <figcaption class="visually-hidden">Изображение кота одновременно в двух состояниях.</figcaption>
             <picture class="example__slider-image-xl">
+              <source srcset="./img/png/cat-tablet-before1x.png" width="560" height="512" media="(min-width: 768px)">
               <img src="./img/png/cat-mobile-before1x.png" width="280" height="256" alt="Кот Борис до снижения веса.">
-              <source media="(min-width: 768px)" srcset="./img/png/cat-tablet-before1x.png">
-              <source media="(min-width: 1440px)" srcset="./img/png/cat-tablet-before1x.png">
             </picture>
             <picture class="example__slider-image-xs">
+              <source srcset="./img/png/cat-tablet-after1x.png" width="560" height="512" media="(min-width: 768px)">
               <img src="./img/png/cat-mobile-after1x.png" width="280" height="256" alt="Кот Борис после снижения веса.">
-              <source media="(min-width: 768px)" srcset="./img/png/cat-tablet-after1x.png">
-              <source media="(min-width: 1440px)" srcset="./img/png/cat-tablet-after1x.png">
             </picture>
               <div class="example__slider-bar">
                 <button class="example__slider-toggle">

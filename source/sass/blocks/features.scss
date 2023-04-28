@@ -93,6 +93,11 @@
   background-repeat: no-repeat;
   transform: translate(6px, 68px);
   content: "";
+
+  @media (min-width: $tablet-width) {
+    background-size: inherit;
+    transform: translate(245px, 0);
+  }
 }
 
 .features__title--img-slim::before {
@@ -129,6 +134,11 @@
   background-repeat: no-repeat;
   transform: translate(-10px, 40px);
   content: "";
+
+  @media (min-width: $tablet-width) {
+    background-size: inherit;
+    transform: translate(150px, 45px);
+  }
 }
 
 .features__title--img-pro::before {
