@@ -10,9 +10,16 @@
       display: flex;
       flex-direction: column;
       width: 708px;
-      min-height: 1080px;
+      height: 1080px;
       margin: 0 auto;
       background-color: $color-default-white;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      width: 1440px;
+      height: 562px;
     }
   }
 
@@ -39,8 +46,9 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    padding: 70px 110px 0;
+    padding: 70px 110px 75px;
     display: block;
+    height: 317px;
   }
 }
 
@@ -61,8 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 76px;
-    padding-left: 110px;
+    padding: 0 110px 76px;
     background-color: $color-bg-white;
   }
 }
@@ -211,6 +218,12 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    transform: translate(350px, 190px);
+    background: none;
   }
 }
 
