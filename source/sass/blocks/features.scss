@@ -15,6 +15,7 @@
     margin-bottom: 71px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -98,6 +99,11 @@
     background-size: inherit;
     transform: translate(245px, 0);
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 70px 97px;
+    transform: translate(16px, 43px);
+  }
 }
 
 .features__title--img-slim::before {
@@ -138,6 +144,11 @@
   @media (min-width: $tablet-width) {
     background-size: inherit;
     transform: translate(150px, 45px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 56px;
+    transform: translate(-16px, 32px);
   }
 }
 
