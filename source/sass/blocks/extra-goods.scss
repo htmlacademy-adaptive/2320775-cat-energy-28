@@ -1,7 +1,6 @@
 .extra-goods__wrapper {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  margin: 3px auto 35px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -16,7 +15,7 @@
 
 .extra-goods__title {
   @include title;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-family: $oswald400;
   text-align: left;
   font-weight: 400;
