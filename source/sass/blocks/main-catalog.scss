@@ -9,7 +9,8 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin-bottom: 68px;
+    margin-bottom: 20px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,10 +41,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 65px;
-    margin-bottom: 82px;
+    margin-bottom: 163px;
     text-align: left;
   }
 
@@ -60,7 +61,8 @@
     display: grid;
     width: 708px;
     grid-template-columns: 325px 325px;
-    grid-gap: 60px;
+    column-gap: 60px;
+    row-gap: 98px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,8 +80,8 @@
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     width: 252px;
     min-height: 390px;
     padding: 0 39px 39px;
@@ -88,6 +90,7 @@
 
     &:last-child {
       display: block;
+      border: 2px solid $color-bg-gray;
       background-color: $color-bg-white;
     }
 
@@ -121,15 +124,35 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
+    position: relative;
+    display: block;
+    min-width: 161px;
+    min-height: 161px;
   }
 }
+
+.main-catalog__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    transform: translate(41px, -46px);
+
+  }
+}
+
+.main-catalog__image--pro {
+  @media (min-width: $tablet-width) {
+    transform: translate(41px, -72px);
+  }
+}
+
 
 .main-catalog__link-title {
   grid-column: 2 / 3;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
+    display: block;
+    margin-bottom: 15px;
+    align-self: center;
   }
 }
 
@@ -140,17 +163,28 @@
   border-spacing: 0;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
-    justify-self: stretch;
+    width: 246px;
+    height: 80px;
+    margin-bottom: 45px;
     font-family: $lato400;
     font-size: 16px;
     line-height: 16px;
     color: $color-desc;
+    }
   }
-}
 
 .main-catalog__count {
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-border-list4
+  }
+}
+
+.main-catalog__data  {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-border-list4
+  }
 }
 
 .main-catalog__button {
