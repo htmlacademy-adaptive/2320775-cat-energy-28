@@ -16,7 +16,7 @@
 
 .extra-goods__title {
   @include title;
-  margin-bottom: 49px;
+  margin-bottom: 40px;
   font-family: $oswald400;
   text-align: left;
   font-weight: 400;
@@ -42,7 +42,7 @@
 
 .extra-goods__item {
   border-top: 1px solid $color-border-list4;
-  padding: 12px 0 19px;
+  padding: 10px 0 19px;
 
   &:last-child {
     border-bottom: 1px solid $color-border-list4;
@@ -63,6 +63,7 @@
 }
 
 .extra-goods__table {
+  margin-bottom: 7px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -77,7 +78,7 @@
 .extra-goods__row {
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 13px;
+  row-gap: 8px;
   color: $color-desc;
 
   @media (min-width: $tablet-width) {
@@ -140,3 +141,7 @@
     line-height: 20px;
   }
 }
+.extra-goods__button {
+  width: 280px;
+}
+

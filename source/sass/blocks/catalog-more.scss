@@ -4,7 +4,7 @@
 
 .catalog-more__wrapper {
   position: relative;
-  padding-top: 35px;
+  padding-top: 60px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -52,7 +52,7 @@
 
 .catalog-more__cross {
   display: block;
-  transform: translate(120px, -32px);
+  transform: translate(124px, -40px);
 
   @media (min-width: $tablet-width) {
     transform: translate(-27px, 13px);

@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 20px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -75,6 +75,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     padding-right: 30px;
