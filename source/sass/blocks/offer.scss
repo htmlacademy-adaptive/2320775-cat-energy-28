@@ -47,15 +47,13 @@
 
     @media (min-width: $desktop-width) {
       display: inherit;
-      top: 0;
-      right: 0;
       width: 720px;
       height: 694px;
       background-image: url("../img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
-
+      transform: translate(530px, -490px);
     }
   }
 
@@ -73,8 +71,7 @@
 
     &::before {
       position: absolute;
-      top: 0;
-      right: 0;
+      transform: translate(530px, -255px);
       width: 720px;
       height: 694px;
       background: $color-bg-green;
