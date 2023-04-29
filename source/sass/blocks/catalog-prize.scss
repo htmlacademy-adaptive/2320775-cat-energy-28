@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   width: 280px;
-  min-height: 289px;
+  height: 289px;
   margin: 0 auto;
   background-color: rgba(104, 183, 56, 0.85);
   margin-bottom: 35px;
@@ -17,10 +17,19 @@
     object-fit: cover;
     opacity: 0.1;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 707px;
+      height: 200px;
+      background-size: cover;
+      background-position-y: -325px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    position: relative;
+    width: 707px;
+    height: 200px;
     margin-bottom: 76px;
   }
 
@@ -54,5 +63,19 @@
     background-image: url("../img/png/gift.png");
     background-repeat: no-repeat;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      right: 0;
+      transform: translate(-422px, -14px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    transform: translate(422px, 71px);
   }
 }
