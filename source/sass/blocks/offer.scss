@@ -53,7 +53,7 @@
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
-      transform: translate(530px, -490px);
+      transform: translate(531px, -456px);
     }
   }
 
@@ -66,12 +66,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-bottom: 52px;
+    margin: 85px 0 52px;
 
     &::before {
       position: absolute;
-      transform: translate(530px, -255px);
+      transform: translate(530px, -225px);
       width: 720px;
       height: 694px;
       background: $color-bg-green;
@@ -92,7 +91,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     background: none;
-    transform: translate(367px, -330px);
+    transform: translate(366px, -316px);
   }
 }
 
