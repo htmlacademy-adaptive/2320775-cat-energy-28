@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-bottom: 85px;
+    margin-bottom: 90px;
   }
 }
 
@@ -42,6 +42,12 @@
       background-color: #68b738;
       content: "";
       z-index: -1;
+
+      @media (min-width: $desktop-width) {
+        width: 1440px;
+        margin-left: -40px;
+        transform: translate(-405px, 20px);
+      }
     }
   }
 
@@ -53,6 +59,11 @@
     font-size: 36px;
     line-height: 36px;
     background-color: $color-default-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    margin-left: -38px;
   }
 }
 
@@ -84,7 +95,9 @@
     display: grid;
     grid-template-columns: 610px 244px;
     column-gap: 40px;
-    padding: 15px 0 17px;
+    padding: 15px 0 15px;
+    border: none;
+    border-top: 1px solid $color-border-list4;
   }
 }
 
@@ -152,6 +165,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
