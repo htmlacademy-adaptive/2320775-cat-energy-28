@@ -34,14 +34,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 412px;
-    min-height: 86px;
+    width: 407px;
+    min-height: 82px;
     margin: 0;
-    padding: 56px 60px 56px 80px;
+    padding: 60px 74px 60px 85px;
     position: absolute;
     z-index: 1;
     background-color: $color-bg-white;
-    transform: translate(108px, 101px);
+    transform: translate(109px, 95px);
   }
 }
 
@@ -101,5 +101,9 @@
 .address__invitation {
   @media (min-width: $tablet-width) {
     text-align: end;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 }

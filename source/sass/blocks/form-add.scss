@@ -17,11 +17,29 @@
     background-color: $color-bg-green;
     content: "";
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      transform: translate(-67px, -16px);
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 1440px;
+      transform: translate(-108px, -14px);
+    }
   }
 
   @media (min-width: $tablet-width) {
+    width: 211px;
+    padding: 0 40px;
+    margin-bottom: 60px;
+    margin-left: -42px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -43,6 +61,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 64px;
     row-gap: 32px;
+    margin-bottom: 54px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -50,7 +69,9 @@
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     grid-template-columns: repeat(4, 245px);
+    margin-bottom: 60px;
   }
+
 }
 
 .form-add__field {
@@ -58,14 +79,28 @@
   grid-template-columns: 30px 1fr;
   grid-gap: 15px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 29px;
+  }
 }
 
 .form-add__mark {
   padding: 0;
   width: 30px;
   height: 30px;
+  box-sizing: border-box;
   background: $color-default-white;
   border: 1px solid $color-border-list4;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-add__field-control:checked + .form-add__mark::before {
@@ -76,4 +111,10 @@
   background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 18px;
+    transform: translate(30%, 44%);
+  }
 }
