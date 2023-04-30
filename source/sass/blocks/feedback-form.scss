@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +52,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     font-size: 60px;
     line-height: 60px;
   }
