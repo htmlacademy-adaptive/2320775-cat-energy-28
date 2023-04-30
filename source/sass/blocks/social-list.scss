@@ -62,6 +62,13 @@
   }
 }
 
+.social-list__image-slogan {
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
+  }
+}
+
 .social-list__link {
   color: $color-desc;
 

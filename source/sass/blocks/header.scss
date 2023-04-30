@@ -1,31 +1,14 @@
-.header {
+.header__container {
+  margin: 0 auto;
+  max-width: 320px;
+  min-height: 65px;
   font-family: $oswald400;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: $color-default-black;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-family: $oswald400;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-family: $oswald400;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.header__container {
-  margin: 0 auto;
-  max-width: 320px;
-  min-height: 65px;
   background-color: $color-bg-white;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -33,6 +16,10 @@
     max-width: 708px;
     align-items: center;
     justify-content: space-between;
+    font-family: $oswald400;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +28,10 @@
     max-width: 1220px;
     min-height: 60px;
     padding: 53px 110px 74px;
+    font-family: $oswald400;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

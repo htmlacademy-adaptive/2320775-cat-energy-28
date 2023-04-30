@@ -75,19 +75,31 @@
 
     &:first-child {
       margin-bottom: 10px;
+
+      @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+      }
     }
   }
 }
 
 .address__map {
   width: 320px;
+  height: 362px;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+  }
+}
+
+.address__invitation {
+  @media (min-width: $tablet-width) {
+    text-align: end;
   }
 }
