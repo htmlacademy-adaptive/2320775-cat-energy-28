@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     display: grid;
-    margin-bottom: 526px;
+    margin-bottom: 506px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +61,7 @@
     display: block;
     width: 420px;
     min-height: 181px;
-    margin: 62px 80px 49px;
+    margin: 51px 88px 22px;
     background: $color-default-white;
   }
 
@@ -84,7 +84,7 @@
   transform: translateY(170px);
 
   @media (min-width: $tablet-width) {
-    transform: translate(25px, 407px);
+    transform: translateY(379px);
     background: $color-bg-white;
   }
 
@@ -145,8 +145,12 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
-    margin-left: 80px;
+    width: 244px;
+    height: 54px;
+    margin-left: 90px;
     margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
     z-index: 1;
   }
 

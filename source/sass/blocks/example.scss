@@ -25,7 +25,7 @@
 
 .example__container {
   @media (min-width: $tablet-width) {
-    margin-bottom: 230px;
+    margin-bottom: 220px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +76,7 @@
 
 .example__about {
   grid-column: 1 / -1;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $color-desc;
@@ -116,13 +117,14 @@
 }
 
 .example__list {
-  border: 1px solid #cdcdcd;
-  width: 124px;
-  height: 56px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin-top: 0;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -201,6 +203,7 @@
     grid-column: 4 / 5;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -232,13 +235,13 @@
   position: absolute;
   width: 280px;
   height: 256px;
-  transform: translate(10px, -20px);
+  transform: translate(21px, -24px);
 
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 560px;
     height: 512px;
-    transform: translate(75px, -175px);
+    transform: translate(104px, -149px);
   }
 }
 
@@ -276,17 +279,17 @@
 }
 
 .example__slider-toggle {
-  transform: translate(-18px, 100px);
   position: absolute;
   width: 40px;
   height: 40px;
-  border: none;
   border-radius: 100%;
   background-image: url("../img/svg/thumb.svg");
   background-repeat: no-repeat;
+  border: none;
+  transform: translate(-18px, 105px);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    transform: translate(-18px, 230px);
+    transform: translate(-18px, 234px);
   }
 }
