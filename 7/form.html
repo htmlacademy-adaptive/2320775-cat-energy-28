@@ -15,14 +15,18 @@
     <div class="header__container">
       <nav class="header__navigation-logo">
         <a class="header__navigation-icon" href="index.html">
-          <img class="header__navigation-image" src="./img/svg/logo-mobile.svg" width="34" height="34" alt="Логотип Cat Energy.">
+          <picture class="header__navigation-image">
+            <source srcset="./img/svg/logo-desktop.svg" width="71" height="60" media="(min-width: 1440px)">
+            <source srcset="./img/svg/logo-tablet.svg" width="60" height="52" media="(min-width: 768px)">
+            <img src="./img/svg/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy.">
+          </picture>
         </a>
         <a class="header__navigation-icon" href="index.html">
-          <img class="header__navigation-slogan" src="./img/svg/logo-cat-energy.svg" width="101" height="18"
+          <img class="header__navigation-slogan" src="./img/svg/logo-cat-energy.svg" width="117" height="18"
             alt="Логотип Cat Energy.">
         </a>
       </nav>
-      <nav class="header__navigation-menu header__navigation-menu--inactive header__navigation-menu--nojs">
+      <nav class="header__navigation-menu header__navigation-menu--inactive header__navigation-menu--nojs header__navigation-menu--form">
         <button class="header__navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации.</span>
         </button>
@@ -34,20 +38,20 @@
             <a class="header__navigation-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-link header__navigation-link--checked" href="form.html">Подбор программы</a>
+            <a class="header__navigation-link header__navigation-link--checked header__navigation-link--form-checked" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main-wrapper">
-    <section class="feedback-form">
-      <div class="feedback-form__container">
-        <div class="feedback-form__wrapper">
-          <h1 class="feedback-form__title">Подбор программы</h1>
-          <p class="feedback-form__about">Заполните анкету, и мы подберем
+    <section class="feedback">
+      <div class="feedback__container">
+        <div class="feedback__wrapper">
+          <h1 class="feedback__title">Подбор программы</h1>
+          <p class="feedback__about">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
-          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="feedback-form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__fieldset-blank form-blank">
               <legend class="form-blank__legend visually-hidden">Заполните анкету</legend>
               <ul class="form-blank__list">
@@ -107,15 +111,21 @@
                 <li class="form-data__item">
                   <label class="form-data__field">
                     <span class="form-data__field-label">E-mail:<sup>*</sup></span>
-                    <input class="form-data__field-control input form-data__field-control--breaf" type="email" name="mail"
+                    <input class="form-data__field-control input" type="email" name="mail"
                       placeholder="kuklachev@gmail.com" required>
+                      <svg class="form-data__field-control-breaf" xmlns="http://www.w3.org/2000/svg" width="19" height="14" fill="none" viewBox="0 0 19 14">
+                        <path stroke="#222" stroke-width="1.3" d="M.65 6v8M17.65 6v8M0 13.35h18M0 1.35h18M17.35 3.18 9 9.68.65 3.18V1.65h16.7v1.53Z"/>
+                      </svg>
                   </label>
                 </li>
                 <li class="form-data__item">
                   <label class="form-data__field">
                     <span class="form-data__field-label">Телефон:<sup>*</sup></span>
-                    <input class="form-data__field-control input form-data__field-control--phone" type="tel" name="phone"
+                    <input class="form-data__field-control input" type="tel" name="phone"
                       placeholder="8 (960) 900-60-90" maxlength="21" required>
+                      <svg class="form-data__field-control-phone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M7 8h8.5m0 0L13 5.5M15.5 8 13 10.5M5.5.5v5h-3v5h3v5H3c-1.5 0-2.5-1-2.5-2.5V3C.5 1.5 1.5.5 3 .5h2.5Z"/>
+                      </svg>
                   </label>
                 </li>
               </ul>
@@ -171,12 +181,10 @@
     <section class="address">
       <div class="address__wrapper">
         <div class="address__wrapper-container">
-          <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="address__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
           <address class="address__invitation">
-            <p class="address__description">ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург
-            </p>
+            <span class="address__description">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="address__description">Cанкт-Петербург</span>
           </address>
         </div>
         <div class="address__map map-invitation">
