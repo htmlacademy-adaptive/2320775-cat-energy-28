@@ -1768,6 +1768,7 @@ a {
 }
 @media (min-width: 1440px) {
   .form__fieldset-add {
+    width: 1220px;
     grid-column: 1/-1;
   }
 }
@@ -2175,6 +2176,7 @@ a {
   margin-bottom: 22px;
   font-size: 16px;
   line-height: 18px;
+  resize: none;
 }
 @media (min-width: 768px) {
   .form-comment__field-control {
@@ -2221,6 +2223,8 @@ a {
   .form-add__title::after {
     width: 1440px;
     transform: translate(-108px, -14px);
+    -moz-transform: translate(-307px, 23px) !important;
+    /*stylelint-disable-line */
   }
 }
 @media (min-width: 768px) {
