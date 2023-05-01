@@ -1580,6 +1580,7 @@ a {
 }
 @media (min-width: 768px) {
   .footer__social {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
