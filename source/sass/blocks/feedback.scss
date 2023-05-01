@@ -1,9 +1,7 @@
-.feedback {
+.feedback__container {
   background-color: $color-bg-white;
   color: $color-default-black;
-}
 
-.feedback__container {
   @media (min-width: $tablet-width) {
     width: 630px;
     margin: 0 auto;

@@ -23,7 +23,7 @@
       transform: translate(-67px, -16px);
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       width: 1440px;
       transform: translate(-108px, -14px);
     }
@@ -83,7 +83,7 @@
     grid-gap: 27px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-gap: 29px;
   }
 }
