@@ -193,13 +193,13 @@
   text-align: end;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $color-border-list4
+    border-bottom: 1px solid $color-border-list4;
   }
 }
 
-.main-catalog__data  {
+.main-catalog__data {
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $color-border-list4
+    border-bottom: 1px solid $color-border-list4;
   }
 }
 
@@ -214,6 +214,8 @@
 }
 
 .main-catalog__button {
+  font-size: 16px;
+  line-height: 20px;
   grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
