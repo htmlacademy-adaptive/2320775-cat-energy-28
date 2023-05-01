@@ -79,9 +79,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    z-index: 1;
     width: 440px;
+    margin-right: 40px;
     color: $color-bg-white;
+    z-index: 1;
   }
 
   &--catalog,

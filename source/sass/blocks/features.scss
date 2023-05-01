@@ -51,6 +51,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     min-height: 374px;
+    row-gap: 20px;
   }
 }
 
@@ -197,6 +198,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row: 3 / -3;
+    margin-top: -10px;
     width: 457px;
   }
 
@@ -235,7 +238,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 8px;
   }
 
   &:hover {
