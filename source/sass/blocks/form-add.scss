@@ -26,7 +26,9 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       transform: translate(-108px, -14px);
-      -moz-transform: translate(-307px, 23px);
+      //Мозилла по-другому высчитывает положение элемента,
+      //поэтому нужно добавить префикс
+      -moz-transform: translate(-307px, 23px) !important; /*stylelint-disable-line */
     }
   }
 
