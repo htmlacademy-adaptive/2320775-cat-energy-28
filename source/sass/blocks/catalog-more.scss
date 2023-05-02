@@ -77,9 +77,6 @@
 }
 
 .catalog-more__cross {
-  display: block;
-  transform: translate(124px, -40px);
-
   @media (min-width: $tablet-width) {
     transform: translate(-33px, 16px);
     margin-bottom: 100px;
@@ -90,11 +87,15 @@
     position: absolute;
     width: 30px;
     height: 2px;
+    top: 15px;
+    right: 125px;
     background-color: $color-border-list4;
     content: "";
 
     @media (min-width: $tablet-width) {
       width: 60px;
+      top: 0;
+      right: -60px;
     }
   }
 
