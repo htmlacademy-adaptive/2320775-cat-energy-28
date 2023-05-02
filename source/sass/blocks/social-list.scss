@@ -9,19 +9,6 @@
     }
   }
 
-  &--grid {
-    padding: 11px;
-    display: grid;
-    grid-template-columns: min-content min-content min-content;
-    justify-content: center;
-    align-items: center;
-    column-gap: 14px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
-  }
-
   &:last-child {
     padding: 10px 0 30px;
 
@@ -32,6 +19,19 @@
 
   @media (min-width: $tablet-width) {
     border: 0;
+  }
+}
+
+.social-list__item--grid {
+  padding: 11px;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
