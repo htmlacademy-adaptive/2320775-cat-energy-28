@@ -18,31 +18,35 @@
 
 .address__wrapper-container {
   width: 280px;
-  margin: 0 auto;
-  min-height: 112px;
-  display: flex;
-  align-items: center;
+  min-height: 60px;
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 139px 139px;
+  background: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
-    background-color: $color-bg-gray;
-    width: 768px;
-    display: flex;
+    width: 628px;
+    min-height: 87px;
+    padding: 56px 70px;
+    display: grid;
+    grid-template-columns: 172px 160px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 565px;
-    min-height: 198px;
+    width: 407px;
+    min-height: 82px;
     margin: 0;
-    padding: 0;
+    padding: 60px 74px 60px 85px;
     position: absolute;
     z-index: 1;
     background-color: $color-bg-white;
-    transform: translate(68px, 73px);
+    transform: translate(105px, 94px);
   }
 }
 
 .address__title {
+  @include reset;
   font-family: $oswald400;
   font-weight: 400;
   font-style: normal;
@@ -50,24 +54,56 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-title1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
+  @include reset;
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
   color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    &:first-child {
+      margin-bottom: 10px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 .address__map {
   width: 320px;
+  height: 362px;
   background-color: $color-bg-white;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+  }
+}
+
+.address__invitation {
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
