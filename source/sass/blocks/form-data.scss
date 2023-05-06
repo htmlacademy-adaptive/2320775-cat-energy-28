@@ -110,11 +110,16 @@
 
 .form-data__field-control-breaf {
   position: absolute;
-  left: 530px;
+  right: 0;
+  padding-left: 10px;
   padding-right: 20px;
   stroke: $color-default-black;
 
-  &:hover {
+  @media (min-width: $desktop-width) {
+    left: 530px;
+  }
+
+  &:focus {
     stroke: $color-bg-green;
   }
 }
@@ -122,10 +127,11 @@
 .form-data__field-control-phone {
   position: absolute;
   right: 0;
+  padding-left: 10px;
   padding-right: 20px;
   stroke: $color-default-black;
 
-  &:hover {
+  &:focus {
     stroke: $color-bg-green;
   }
 }
