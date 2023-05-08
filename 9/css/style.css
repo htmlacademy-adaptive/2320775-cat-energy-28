@@ -2140,7 +2140,7 @@ a {
   }
 }
 
-.form-data__field-control-breaf {
+.form-data__field-control-letter {
   position: absolute;
   right: 0;
   padding-left: 10px;
@@ -2148,11 +2148,11 @@ a {
   stroke: #000000;
 }
 @media (min-width: 1440px) {
-  .form-data__field-control-breaf {
+  .form-data__field-control-letter {
     left: 525px;
   }
 }
-.form-data__field-control-breaf:focus {
+.form-data__field-control-letter:focus {
   stroke: #68b738;
 }
 
