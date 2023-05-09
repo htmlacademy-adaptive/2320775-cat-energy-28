@@ -241,12 +241,7 @@
     margin-top: 8px;
   }
 
-  &:hover {
-    .features__link-line {
-      background-image: url("../img/svg/arrow-big.svg");
-    }
-  }
-
+  &:hover,
   &:focus {
     .features__link-line {
       background-image: url("../img/svg/arrow-big.svg");

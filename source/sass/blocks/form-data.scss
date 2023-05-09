@@ -108,14 +108,30 @@
   }
 }
 
-.form-data__field-control-breaf {
+.form-data__field-control-letter {
   position: absolute;
   right: 0;
+  padding-left: 10px;
   padding-right: 20px;
+  stroke: $color-default-black;
+
+  @media (min-width: $desktop-width) {
+    left: 525px;
+  }
+
+  &:focus {
+    stroke: $color-bg-green;
+  }
 }
 
 .form-data__field-control-phone {
   position: absolute;
   right: 0;
+  padding-left: 10px;
   padding-right: 20px;
+  stroke: $color-default-black;
+
+  &:focus {
+    stroke: $color-bg-green;
+  }
 }
