@@ -17,28 +17,28 @@
 }
 
 .address__wrapper-container {
+  display: grid;
+  grid-template-columns: 139px 139px;
   width: 280px;
   min-height: 60px;
   padding: 26px 20px;
-  display: grid;
-  grid-template-columns: 139px 139px;
   background: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
-    min-height: 87px;
-    padding: 56px 70px;
     display: grid;
     grid-template-columns: 172px 160px;
     justify-content: space-between;
+    width: 628px;
+    min-height: 87px;
+    padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: 0;
     width: 407px;
     min-height: 82px;
-    margin: 0;
     padding: 60px 74px 60px 85px;
-    position: absolute;
     z-index: 1;
     background-color: $color-bg-white;
     transform: translate(105px, 94px);

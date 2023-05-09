@@ -82,3 +82,18 @@
     height: 18px;
   }
 }
+
+.form-choice__field-control {
+
+  &:hover + .form-choice__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-choice__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
+  }
+}

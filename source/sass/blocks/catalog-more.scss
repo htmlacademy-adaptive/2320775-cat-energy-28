@@ -15,13 +15,13 @@
 
 .catalog-more__title {
   @include title;
+  margin-bottom: 8px;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
   color: $color-title1;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 170px;
@@ -33,22 +33,21 @@
 
 .catalog-more__about {
   @include title;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 21px;
   color: $color-desc;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
     width: 165px;
     min-height: 36px;
     margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
 .catalog-more__button {
-  justify-self: stretch;
   font-size: 16px;
   line-height: 20px;
   color: $color-desc;

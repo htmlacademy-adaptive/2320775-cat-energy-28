@@ -1,6 +1,6 @@
 .example-wrapper {
   width: 320px;
-  height: 660px;
+  min-height: 660px;
   background-color: $color-bg-grey;
 
   @media (min-width: $tablet-width) {
@@ -44,28 +44,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 433px;
-    padding: 45px 110px 75px;
     display: block;
     height: 317px;
+    width: 433px;
+    padding: 45px 110px 75px;
   }
 }
 
 .example__title {
   @include title;
+  padding: 25px 25px 0;
+  margin-bottom: 25px;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   color: $color-default-black;
-  padding: 25px 25px 0;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    padding: 43px 0 63px;
     font-size: 60px;
     line-height: 60px;
-    padding: 43px 0 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,6 @@
 }
 
 .example__about {
-  grid-column: 1 / -1;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -195,6 +194,7 @@
 
 .example__results-wrapper {
   display: flex;
+  flex-wrap: wrap;
   grid-column: 1 / -1;
   justify-content: center;
   gap: 5px;
@@ -217,6 +217,7 @@
 
 .example__slider {
   width: 280px;
+  min-height: 256px;
   background-color: $color-bg-grey;
 
   @media (min-width: $tablet-width) {

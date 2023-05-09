@@ -11,12 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 71px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
   }
 }
 
@@ -61,6 +60,7 @@
   grid-template-columns: min-content auto;
   column-gap: 15px;
   margin-bottom: 23px;
+  padding-top: 20px;
   align-items: center;
   justify-content: center;
   font-family: $oswald400;
@@ -185,9 +185,8 @@
   @include reset;
   font-size: 14px;
   line-height: 18px;
-  width: 227px;
-  height: 90px;
-  margin-bottom: 23px;
+  width: 240px;
+  min-height: 90px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -222,6 +221,7 @@
 }
 
 .features__link {
+  margin-bottom: 19px;
   margin-top: 19px;
   font-family: $oswald400;
   font-size: 16px;

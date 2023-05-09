@@ -23,7 +23,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: min-content min-content;
     justify-content: space-between;
     max-width: 1220px;
     min-height: 60px;
@@ -121,7 +120,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 481px;
+    width: 485px;
+    justify-content: flex-start;
   }
 }
 
@@ -192,7 +192,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 481px;
+    width: 485px;
+    justify-content: flex-start;
     background: initial;
   }
 }
@@ -214,7 +215,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 481px;
+    width: 485px;
+    justify-content: flex-start;
   }
 }
 
@@ -244,7 +246,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 481px;
+    width: 485px;
+    justify-content: flex-start;
+  }
+}
+
+.header__navigation-item {
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
   }
 }
 
@@ -253,6 +262,10 @@
   color: inherit;
   padding: 22px 20px 24px;
   border-top: 1px solid $color-border-list;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 0;

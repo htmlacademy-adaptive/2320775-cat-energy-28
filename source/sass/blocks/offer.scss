@@ -51,13 +51,14 @@
 
     @media (min-width: $desktop-width) {
       display: inherit;
+      top: 0;
       width: 720px;
       height: 694px;
       background-image: url("../img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
-      transform: translate(530px, -456px);
+      transform: translateX(530px);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/jpg/background-desktop@2x.jpg");
@@ -78,7 +79,8 @@
 
     &::before {
       position: absolute;
-      transform: translate(530px, -225px);
+      top: 0;
+      transform: translateX(530px);
       width: 720px;
       height: 694px;
       background: $color-bg-green;

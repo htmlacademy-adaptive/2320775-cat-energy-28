@@ -21,7 +21,7 @@
     @media (min-width: $tablet-width) {
       width: 768px;
       transform: translate(-67px, -16px);
-      //Мозилла по-другому высчитывает положение элемента,
+      //Мозилла по-иному высчитывает положение элемента, нежели хром,
       //поэтому нужно добавить префикс
       -moz-transform: translate(-278px, 23px) !important; /*stylelint-disable-line */
     }
@@ -29,7 +29,7 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       transform: translate(-108px, -14px);
-      //Мозилла по-другому высчитывает положение элемента,
+      //Мозилла по-иному высчитывает положение элемента, нежели хром,
       //поэтому нужно добавить префикс
       -moz-transform: translate(-319px, 23px) !important; /*stylelint-disable-line */
     }
@@ -121,5 +121,20 @@
     width: 24px;
     height: 18px;
     transform: translate(30%, 44%);
+  }
+}
+
+.form-add__field-control {
+
+  &:hover + .form-add__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-add__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }
