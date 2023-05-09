@@ -83,6 +83,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .form-data__field-label {
@@ -98,6 +99,11 @@
   line-height: 18px;
   height: 45px;
   flex-grow: 1;
+
+  &:focus + .form-data__field-control-letter,
+  &:focus + .form-data__field-control-phone {
+    stroke: $color-bg-green;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -118,10 +124,6 @@
   @media (min-width: $desktop-width) {
     left: 525px;
   }
-
-  &:focus {
-    stroke: $color-bg-green;
-  }
 }
 
 .form-data__field-control-phone {
@@ -130,8 +132,4 @@
   padding-left: 10px;
   padding-right: 20px;
   stroke: $color-default-black;
-
-  &:focus {
-    stroke: $color-bg-green;
-  }
 }
