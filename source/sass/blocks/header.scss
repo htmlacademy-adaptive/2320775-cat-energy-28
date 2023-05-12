@@ -25,7 +25,7 @@
     justify-content: space-between;
     max-width: 1220px;
     min-height: 60px;
-    padding: 53px 110px 20px;
+    padding: 53px 110px;
     font-family: $oswald400;
     font-weight: 400;
     font-size: 20px;
@@ -54,10 +54,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     width: 202px;
     margin: 0;
-    padding: 0;
   }
 }
 
@@ -85,8 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 440px;
-    margin-right: 40px;
+    margin: 0;
     color: $color-bg-white;
     z-index: 1;
   }
@@ -119,7 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 485px;
+    width: 550px;
     justify-content: flex-start;
   }
 }
@@ -205,7 +202,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 485px;
+    width: 550px;
     justify-content: flex-start;
     background: initial;
   }
@@ -229,7 +226,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 485px;
+    width: 550px;
+    margin-left: 0;
     justify-content: flex-start;
   }
 }
@@ -260,7 +258,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 485px;
+    width: 550px;
     justify-content: flex-start;
   }
 }
@@ -271,7 +269,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 25px;
+    padding: 10px 15px;
   }
 }
 
