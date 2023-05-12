@@ -44,10 +44,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    height: 317px;
-    width: 433px;
-    padding: 70px 110px 75px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    width: 436px;
+    min-height: 317px;
+    margin: 72px 0 0 110px;
   }
 }
 
@@ -70,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 75px;
+    padding: 0 799px 75px 110px;
     background-color: $color-bg-white;
   }
 }
@@ -189,7 +191,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
+    grid-column: 1/2;
+    text-align: left;
+
+    &--price {
+      grid-column: 2/3;
+      text-align: center;
+    }
   }
 }
 
@@ -209,9 +217,9 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
+    display: grid;
+    width: 366px;
+    grid-template-columns: 1fr 1fr;
     margin-top: 20px;
   }
 }

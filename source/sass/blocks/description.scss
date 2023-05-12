@@ -63,6 +63,7 @@
     grid-template-columns: repeat(4, 230px);
     grid-gap: 94px;
     margin-bottom: 80px;
+    align-items: baseline;
   }
 }
 
@@ -73,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     counter-increment: verse 1;
-    height: 280px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,9 +177,10 @@
       font-size: 280px;
       line-height: 280px;
       color: rgb(242, 242, 242);
-      transform: translate(9px, -222px);
+      transform: translate(10px,-150px);
       content: counter(verse);
       right: 0;
+      top: 0;
       z-index: -1;
     }
   }
