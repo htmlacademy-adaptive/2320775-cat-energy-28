@@ -168,10 +168,14 @@
           <figure class="example__slider-item">
             <figcaption class="visually-hidden">Изображение кота одновременно в двух состояниях.</figcaption>
             <picture class="example__slider-image-xl">
+              <source srcset="./img/png/cat-tablet-before@1x.webp 1x, ./img/png/cat-tablet-before@2x.webp 2x" width="560" height="512" media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/png/cat-mobile-before@1x.webp 1x, ./img/png/cat-mobile-before@2x.webp 2x" width="280" height="256">
               <source srcset="./img/png/cat-tablet-before@1x.png 1x, ./img/png/cat-tablet-before@2x.png 2x" width="560" height="512" media="(min-width: 768px)">
               <img src="./img/png/cat-mobile-before@1x.png" srcset="./img/png/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот Борис до снижения веса.">
             </picture>
             <picture class="example__slider-image-xs">
+              <source srcset="./img/png/cat-tablet-after@1x.webp 1x, ./img/png/cat-tablet-after@2x.webp 2x" width="560" height="512" media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/png/cat-mobile-after@1x.webp 1x, ./img/png/cat-mobile-after@2x.webp 2x" width="280" height="256">
               <source srcset="./img/png/cat-tablet-after@1x.png 1x, ./img/png/cat-tablet-after@2x.png 2x" width="560" height="512" media="(min-width: 768px)">
               <img src="./img/png/cat-mobile-after@1x.png" srcset="./img/png/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот Борис после снижения веса.">
             </picture>
