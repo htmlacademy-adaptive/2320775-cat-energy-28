@@ -15,7 +15,6 @@
     padding: 0 30px;
     max-width: 708px;
     align-items: center;
-    justify-content: space-between;
     font-family: $oswald400;
     font-weight: 400;
     font-size: 18px;
@@ -82,8 +81,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 440px;
+    width: 490px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,11 +109,12 @@
 
   @media (min-width: $tablet-width) {
     @include list-reset;
-    width: 440px;
+    margin-left: 50px;
+    width: 490px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -155,6 +154,19 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
 
+  &:hover {
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,1.25));
+  }
+
+  &:focus {
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,1.25));
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -183,11 +195,12 @@
   @media (min-width: $tablet-width) {
     @include list-reset;
     position: initial;
-    width: 440px;
+    margin-left: 50px;
+    width: 490px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -206,11 +219,12 @@
 
   @media (min-width: $tablet-width) {
     @include list-reset;
-    width: 440px;
+    margin-left: 50px;
+    width: 490px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -241,7 +255,7 @@
     min-height: 34px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -252,6 +266,10 @@
 }
 
 .header__navigation-item {
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 25px;
   }
