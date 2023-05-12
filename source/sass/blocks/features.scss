@@ -46,6 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 52px 100px 1fr;
     width: 570px;
     min-height: 374px;
   }
@@ -77,13 +78,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 0 30px;
-    width: 457px;
-    gap: 62px;
-    min-height: 106px;
+    grid-column: 3/-1;
+    margin-left: 62px;
+    padding: 30px 0 64px;
+    word-break: break-word;
   }
 }
 
@@ -129,10 +127,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
     transform: none;
     width: 100px;
     height: 100px;
+    top: 12%;
+    left: 9%;
   }
 }
 
@@ -178,10 +177,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
     transform: none;
     width: 100px;
     height: 100px;
+    top: 12%;
+    left: 9%;
   }
 }
 
@@ -202,8 +202,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-column: 2/4;
+    grid-row: 2/3;
     width: 457px;
     padding: 0;
   }
@@ -243,6 +243,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+    grid-row: 3 / 4;
     padding: 10px 0;
     padding: 10px 0 15px;
   }
