@@ -28,25 +28,22 @@
 
   &::after {
     position: absolute;
-    transform: translate(21px, 15px);
+    top: 15px;
+    right: -20px;
     width: 53px;
     height: 2px;
     background-color: $color-bg-green;
     content: "";
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      transform: translate(-405px, 18px);
+      top: 20px;
+      right: -73%;
       width: 768px;
-      height: 2px;
-      background-color: #68b738;
-      content: "";
       z-index: -1;
 
       @media (min-width: $desktop-width) {
         width: 1440px;
-        margin-left: -40px;
-        transform: translate(-407px, 20px);
+        right: -230%;
       }
     }
   }
@@ -55,7 +52,7 @@
     display: block;
     width: 340px;
     padding: 0 37px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
     background-color: $color-default-white;
@@ -86,7 +83,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 28px;
+    padding: 26px 34px 30px;
     border: 1px solid $color-border-list4;
     border-bottom: none;
   }

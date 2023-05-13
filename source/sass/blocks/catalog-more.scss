@@ -29,6 +29,10 @@
     line-height: 22px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 178px;
+  }
 }
 
 .catalog-more__about {
@@ -41,7 +45,7 @@
   @media (min-width: $tablet-width) {
     width: 165px;
     min-height: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 86px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -68,11 +72,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 249px;
+    padding: 10px 78px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 168px;
+    padding: 10px 40px;
   }
 }
 
