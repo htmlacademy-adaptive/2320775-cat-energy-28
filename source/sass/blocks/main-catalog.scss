@@ -74,8 +74,8 @@
 .main-catalog__item {
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 15px;
-  margin-bottom: 45px;
+  row-gap: 16px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -119,7 +119,7 @@
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -223,6 +223,11 @@
     width: 168px;
   }
 }
+
+.main-catalog__button a {
+  padding: 10px;
+}
+
 
 .main-catalog__title {
   @include title;

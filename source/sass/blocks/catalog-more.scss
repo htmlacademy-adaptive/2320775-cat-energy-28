@@ -4,7 +4,7 @@
 
 .catalog-more__wrapper {
   position: relative;
-  padding-top: 60px;
+  padding-top: 63px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,6 +50,7 @@
 .catalog-more__button {
   font-size: 16px;
   line-height: 20px;
+  padding: 10px;
   color: $color-desc;
   background-color: $color-bg-gray;
 
@@ -86,7 +87,7 @@
     position: absolute;
     width: 30px;
     height: 2px;
-    top: 15px;
+    top: 23px;
     right: 125px;
     background-color: $color-border-list4;
     content: "";
