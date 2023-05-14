@@ -29,6 +29,18 @@
       right: -110px;
       top: 20px;
     }
+
+    @-moz-document url-prefix("") {
+      top: -47px;
+
+      @media (min-width: $tablet-width) {
+        top: -90px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: -86px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {

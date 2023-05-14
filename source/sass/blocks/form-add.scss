@@ -22,18 +22,24 @@
       width: 768px;
       right: -69px;
       top: 22px;
-      //Мозилла по-иному высчитывает положение элемента, нежели хром,
-      //поэтому нужно добавить префикс
-      -moz-transform: translate(-278px, 23px) !important; /*stylelint-disable-line */
     }
 
     @media (min-width: $desktop-width) {
       width: 1440px;
       right: -110px;
       top: 20px;
-      //Мозилла по-иному высчитывает положение элемента, нежели хром,
-      //поэтому нужно добавить префикс
-      -moz-transform: translate(-319px, 23px) !important; /*stylelint-disable-line */
+    }
+
+    @-moz-document url-prefix("") {
+      top: -47px;
+
+      @media (min-width: $tablet-width) {
+        top: -90px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: -71px;
+      }
     }
   }
 
@@ -127,7 +133,6 @@
 }
 
 .form-add__field-control {
-
   &:hover + .form-add__mark {
     border: 1px solid $color-border-list7;
   }
