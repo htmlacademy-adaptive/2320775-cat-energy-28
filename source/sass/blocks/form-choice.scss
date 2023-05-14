@@ -50,8 +50,12 @@
 .form-choice__field {
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-gap: 30px;
+  grid-gap: 14px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+  }
 }
 
 .form-choice__mark {
