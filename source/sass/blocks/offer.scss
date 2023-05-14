@@ -38,8 +38,16 @@
     opacity: 0.1;
     content: "";
 
+    @supports (background-image: url("../img/jpg/background-mobile.webp")) {
+      background-image: url("../img/jpg/background-mobile.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpg/background-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/jpg/background-mobile@2x.webp")) {
+        background-image: url("../img/jpg/background-mobile@2x.webp");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -58,8 +66,16 @@
       background-size: cover;
       transform: translateX(532px);
 
+      @supports (background-image: url("../img/jpg/background-desktop.webp")) {
+        background-image: url("../img/jpg/background-desktop.webp");
+      }
+
       @media (min-resolution: 2dppx) {
         background-image: url("../img/jpg/background-desktop@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/jpg/background-desktop@2x.webp")) {
+        background-image: url("../img/jpg/background-desktop@2x.webp");
       }
     }
   }
