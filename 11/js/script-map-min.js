@@ -1,0 +1,1 @@
+const map=document.querySelector(".map-invitation__source"),image=document.querySelector(".map-invitation__bg-image");void 0!==window.innerWidth?(image.style.display="none",map.style.display="block"):(image.style.display="block",map.style.display="none");
