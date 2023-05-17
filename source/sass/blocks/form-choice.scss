@@ -50,8 +50,12 @@
 .form-choice__field {
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-gap: 30px;
+  grid-gap: 14px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+  }
 }
 
 .form-choice__mark {
@@ -80,5 +84,19 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
+  }
+}
+
+.form-choice__field-control {
+  &:hover + .form-choice__mark {
+    border: 1px solid $color-border-list7;
+  }
+
+  &:focus + .form-choice__mark {
+    outline: 1px solid;
+  }
+
+  &:disabled ~ span {
+    opacity: 0.3;
   }
 }

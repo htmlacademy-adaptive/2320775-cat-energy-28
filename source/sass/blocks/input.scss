@@ -1,7 +1,7 @@
 .input {
   font-family: $oswald400;
-  padding: 0 15px;
   text-transform: uppercase;
+  padding: 0 10px;
   color: $color-desc;
   border: 1px solid $color-border-list6;
   box-sizing: border-box;
@@ -12,5 +12,13 @@
 
   &:focus {
     border-color: $color-desc;
+  }
+
+  &:invalid {
+    border-color: $color-border-invalid;
+  }
+
+  &:valid {
+    border-color: $color-border-list6;
   }
 }

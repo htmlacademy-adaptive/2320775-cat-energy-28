@@ -8,16 +8,14 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     display: grid;
-    margin-bottom: 506px;
+    margin-top: 52px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
     width: 1220px;
-    margin-left: 190px;
-    margin-bottom: 265px;
+    margin: 47px auto 265px;
   }
 }
 
@@ -40,8 +38,16 @@
     opacity: 0.1;
     content: "";
 
+    @supports (background-image: url("../img/jpg/background-mobile.webp")) {
+      background-image: url("../img/jpg/background-mobile.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpg/background-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/jpg/background-mobile@2x.webp")) {
+        background-image: url("../img/jpg/background-mobile@2x.webp");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -51,16 +57,25 @@
 
     @media (min-width: $desktop-width) {
       display: inherit;
+      top: 0;
       width: 720px;
       height: 694px;
       background-image: url("../img/jpg/background-desktop.jpg");
       opacity: 0.2;
       background-repeat: no-repeat;
       background-size: cover;
-      transform: translate(530px, -456px);
+      transform: translateX(532px);
+
+      @supports (background-image: url("../img/jpg/background-desktop.webp")) {
+        background-image: url("../img/jpg/background-desktop.webp");
+      }
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/jpg/background-desktop@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/jpg/background-desktop@2x.webp")) {
+        background-image: url("../img/jpg/background-desktop@2x.webp");
       }
     }
   }
@@ -69,16 +84,19 @@
     display: block;
     width: 420px;
     min-height: 181px;
-    margin: 51px 88px 22px;
+    padding: 0 88px 20px;
     background: $color-default-white;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 85px 0 52px;
+    width: 420px;
+    min-height: 180px;
+    padding: 0 80px;
 
     &::before {
       position: absolute;
-      transform: translate(530px, -225px);
+      top: 0;
+      transform: translateX(532px);
       width: 720px;
       height: 694px;
       background: $color-bg-green;
@@ -88,18 +106,17 @@
 }
 
 .offer__picture {
-  position: absolute;
-  transform: translateY(170px);
+  margin-top: -135px;
 
   @media (min-width: $tablet-width) {
-    transform: translateY(379px);
+    transform: translateY(-85px);
     background: $color-bg-white;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     background: none;
-    transform: translate(366px, -316px);
+    position: absolute;
+    transform: translate(450px, 92px);
   }
 }
 
@@ -129,7 +146,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-bottom: 29px;
+  margin-bottom: 165px;
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
@@ -145,17 +162,19 @@
 }
 
 .offer__button {
-  margin-top: 138px;
   width: 280px;
+  padding: 10px 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
     width: 244px;
-    height: 54px;
-    margin-left: 90px;
+    padding: 18px 0;
+    margin: 0 0 0 90px;
     margin-top: 0;
     font-size: 20px;
     line-height: 20px;
@@ -163,9 +182,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 0 79px;
     width: 244px;
-    height: 54px;
     font-size: 20px;
     line-height: 20px;
   }

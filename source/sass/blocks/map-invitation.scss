@@ -1,4 +1,16 @@
+.map-invitation__bg-image img {
+  display: block;
+}
+
+.map-invitation__bg-image {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+
 .map-invitation__source {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   display: block;
   border: 0;
   width: 100%;

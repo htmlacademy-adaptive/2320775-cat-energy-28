@@ -18,8 +18,16 @@
     opacity: 0.1;
     content: "";
 
+    @supports (background-image: url("../img/jpg/background-prize.webp")) {
+      background-image: url("../img/jpg/background-prize.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/jpg/background-prize@2x.jpg");
+
+      @supports (background-image: url("../img/jpg/background-prize@2x.webp")) {
+        background-image: url("../img/jpg/background-prize@2x.webp");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -53,6 +61,7 @@
 .catalog-prize__title {
   @include title;
   display: block;
+  width: 161px;
   margin: 0 auto;
   padding: 189px 61px 43px 58px;
   font-size: 16px;

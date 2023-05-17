@@ -7,16 +7,14 @@
   @media (min-width: $tablet-width) {
     grid-gap: 30px;
     width: 708px;
-    margin: 0 auto;
+    margin: -90px auto 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 71px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    width: 1220px;
+    margin: 0 auto 70px;
   }
 }
 
@@ -34,8 +32,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     display: grid;
-    grid-template-columns: 52px 1fr 1fr;
-    grid-template-rows: repeat(4, 60px);
+    grid-template-columns: 52px 340px 1fr;
     width: 708px;
     min-height: 372px;
 
@@ -49,9 +46,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 52px 100px 1fr;
     width: 570px;
     min-height: 374px;
-    row-gap: 20px;
   }
 }
 
@@ -59,8 +56,8 @@
   @include title;
   display: grid;
   grid-template-columns: min-content auto;
-  column-gap: 15px;
-  margin-bottom: 23px;
+  column-gap: 20px;
+  padding: 24px;
   align-items: center;
   justify-content: center;
   font-family: $oswald400;
@@ -74,18 +71,17 @@
     grid-column: 2 / 3;
     display: block;
     text-align: left;
+    padding: 72px 0 0;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 10px;
+    word-wrap: break-word;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
-    display: grid;
-    column-gap: 62px;
-    justify-content: start;
-    font-size: 36px;
-    line-height: 36px;
+    grid-column: 3/-1;
+    margin-left: 62px;
+    padding: 30px 0 70px;
+    word-break: break-word;
   }
 }
 
@@ -101,12 +97,16 @@
 
   @media (min-width: $tablet-width) {
     background-size: inherit;
-    transform: translate(259px, 0);
+    right: 14%;
+    top: 22%;
+    transform: none;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 70px 97px;
-    transform: translate(16px, 43px);
+    right: 63%;
+    top: 11%;
+    transform: none;
   }
 }
 
@@ -122,16 +122,16 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    right: 0;
-    bottom: 0;
-    transform: translate(-63px, -85px);
+    top: 25%;
+    right: 9%;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
     transform: none;
     width: 100px;
     height: 100px;
+    top: 12%;
+    left: 9%;
   }
 }
 
@@ -147,12 +147,16 @@
 
   @media (min-width: $tablet-width) {
     background-size: inherit;
-    transform: translate(155px, 58px);
+    right: 4%;
+    top: 36%;
+    transform: none;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 134px 56px;
-    transform: translate(-16px, 32px);
+    right: 47%;
+    top: 18%;
+    transform: none;
   }
 }
 
@@ -168,46 +172,47 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    right: 0;
-    bottom: 0;
-    transform: translate(-65px, -85px);
+    top: 25%;
+    right: 9%;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
     transform: none;
     width: 100px;
     height: 100px;
+    top: 12%;
+    left: 9%;
   }
 }
 
 .features__about {
-  @include reset;
+  margin: 0;
+  padding: 0 20px 20px;
   font-size: 14px;
   line-height: 18px;
-  width: 227px;
-  height: 90px;
-  margin-bottom: 23px;
+  width: 240px;
+  min-height: 90px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
+    padding: 20px 0;
     width: 340px;
-    margin-top: 10px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 3 / -3;
-    margin-top: -10px;
+    grid-column: 2/4;
+    grid-row: 2/3;
     width: 457px;
+    padding: 0;
   }
 
   &--line::after {
     display: block;
     width: 230px;
     height: 1px;
-    margin-top: 23px;
+    margin-top: 21px;
     background: $color-border-list2;
     content: "";
 
@@ -222,7 +227,7 @@
 }
 
 .features__link {
-  margin-top: 19px;
+  padding: 0 20px 20px;
   font-family: $oswald400;
   font-size: 16px;
   line-height: 16px;
@@ -232,13 +237,15 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    margin-top: 36px;
+    padding: 30px 0 53px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 8px;
+    grid-column: 2/4;
+    grid-row: 3 / 4;
+    padding: 10px 0 9px;
   }
 
   &:hover,
@@ -259,10 +266,10 @@
 
 .features__link-line {
   display: inline-block;
-  margin-left: 22px;
+  margin-left: 13px;
   width: 32px;
   height: 16px;
   background-image: url("../img/svg/arrow-small.svg");
   background-repeat: no-repeat;
-  transform: translateY(3px);
+  transform: translateY(1px);
 }

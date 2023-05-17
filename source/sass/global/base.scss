@@ -23,3 +23,8 @@ img {
 a {
   text-decoration: none;
 }
+
+//Отключение стрелок в инпуте Мозиллы
+input[type="number"] {
+  -moz-appearance: textfield !important; /*stylelint-disable-line */
+}

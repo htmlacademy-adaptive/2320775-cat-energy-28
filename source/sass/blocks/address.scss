@@ -7,8 +7,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     width: 1440px;
-    height: 400px;
+    min-height: 400px;
   }
 }
 
@@ -17,31 +18,33 @@
 }
 
 .address__wrapper-container {
+  display: grid;
+  grid-template-columns: 139px 139px;
   width: 280px;
   min-height: 60px;
   padding: 26px 20px;
-  display: grid;
-  grid-template-columns: 139px 139px;
   background: $color-bg-gray;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
-    min-height: 87px;
-    padding: 56px 70px;
     display: grid;
     grid-template-columns: 172px 160px;
     justify-content: space-between;
+    width: 628px;
+    min-height: 83px;
+    padding: 58px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 407px;
-    min-height: 82px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    align-self: center;
     margin: 0;
+    width: 407px;
+    min-height: 83px;
     padding: 60px 74px 60px 85px;
-    position: absolute;
-    z-index: 1;
     background-color: $color-bg-white;
-    transform: translate(105px, 94px);
+    transform: translate(106px, -6px);
+    z-index: 2;
   }
 }
 
@@ -86,19 +89,18 @@
 .address__map {
   width: 320px;
   height: 362px;
-  background-image: url("../img/jpg/background-map-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
-    background-image: url("../img/jpg/background-map-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
     width: 1440px;
-    background-image: url("../img/jpg/background-map-desktop.jpg");
+    min-height: 400px;
   }
 }
 

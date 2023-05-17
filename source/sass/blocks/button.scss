@@ -1,13 +1,13 @@
 .button {
-  font-family: $oswald400;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40px;
+  font-family: $oswald400;
   color: $color-bg-white;
   background-color: $color-bg-green;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
 
   &:hover {
