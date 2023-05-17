@@ -5,7 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import minify from 'gulp-minify';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -39,10 +38,11 @@ return gulp.src('source/*.html')
 
 const scripts = () => {
 return gulp.src('source/js/*.js')
-.pipe(minify())
+.pipe(terser())
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
+
 
 // Images
 
