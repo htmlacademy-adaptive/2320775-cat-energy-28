@@ -1,12 +1,13 @@
 .extra-goods__wrapper {
-  width: 280px;
-  margin: 6px auto 40px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: relative;
     width: 708px;
     margin: 0 auto 69px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,9 +16,15 @@
   }
 }
 
-.extra-goods__title {
-  @include title;
+.extra-goods__container {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
+  background-color: $color-default-white;
+}
+
+.extra-goods__title {
+  width: fit-content;
   margin-bottom: 37px;
   font-family: $oswald400;
   text-align: left;
@@ -29,11 +36,12 @@
   &::after {
     position: absolute;
     top: 15px;
-    right: -20px;
-    width: 53px;
+    left: 0;
+    width: 100vw;
     height: 2px;
     background-color: $color-bg-green;
     content: "";
+    z-index: -1;
 
     @media (min-width: $tablet-width) {
       top: 20px;
@@ -49,13 +57,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 340px;
     padding: 0 37px;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
-    background-color: $color-default-white;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +73,8 @@
 .extra-goods__list {
   @include list-reset;
   display: grid;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     width: 896px;

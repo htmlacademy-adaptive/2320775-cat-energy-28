@@ -27,10 +27,11 @@
 
   &::before {
     position: absolute;
-    width: 320px;
+    top: 63px;
+    right: 0;
+    width: 100vw;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, -29px);
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -101,11 +102,12 @@
 
   &::before {
     position: absolute;
-    width: 320px;
+    right: 0;
+    width: 100vw;
     height: 1px;
     margin-top: 12px;
     background: $color-border-list3;
-    transform: translate(-20px, -31px);
+    transform: translateY(-31px);
     content: "";
 
     @media (min-width: $tablet-width) {
