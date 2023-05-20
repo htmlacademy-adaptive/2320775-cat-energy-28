@@ -25,10 +25,12 @@
   }
 
   &::after {
-    width: 320px;
+    position: absolute;
+    width: 100vw;
+    left: 0;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, 10px);
+    transform: translateY(180px);
     content: "";
 
     @media (min-width: $tablet-width) {

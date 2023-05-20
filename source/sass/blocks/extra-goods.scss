@@ -19,7 +19,6 @@
 .extra-goods__container {
   position: relative;
   width: 265px;
-  margin: 0 auto;
   margin-bottom: 37px;
   background-color: $color-default-white;
 
@@ -44,7 +43,7 @@
     position: absolute;
     top: 15px;
     left: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 2px;
     background-color: $color-bg-green;
     content: "";
@@ -52,9 +51,10 @@
 
     @media (min-width: $tablet-width) {
       top: 20px;
+      width: 100vw;
       left: inherit;
       right: 0;
-      box-shadow: 100vw 0 0 #68b738;
+      box-shadow: 100vw 0 0 $color-bg-green;
 
       @media (min-width: $desktop-width) {
         right: 0;
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 34px 30px;
+    padding: 26px 40px 30px;
     border: 1px solid $color-border-list4;
     border-bottom: none;
   }

@@ -10,24 +10,22 @@
 
   &::after {
     position: absolute;
-    width: 300px;
+    width: calc(100vw - 20px);
     height: 2px;
     top: 16px;
-    right: -20px;
+    left: 0;
     background-color: $color-bg-green;
     content: "";
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
-      right: -69px;
-      top: 25px;
+      width: 100vw;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1440px;
-      right: -110px;
-      top: 20px;
+      // width: 1440px;
+      // right: -110px;
+      // top: 20px;
     }
 
     @-moz-document url-prefix("") {

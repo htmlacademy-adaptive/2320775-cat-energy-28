@@ -51,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    min-width: 174px;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +61,7 @@
 }
 
 .header__navigation-icon:nth-child(2) {
-  padding-left: 47px;
+  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     padding-left: 12px;
@@ -70,9 +70,15 @@
 
 .header__navigation-slogan {
   @media (min-width: $tablet-width) {
-    width: 117px;
+    width: 100px;
     height: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 119px;
+    height: 21px;
+  }
+
 }
 
 .header__navigation-menu {

@@ -1,5 +1,4 @@
 .address__wrapper {
-  width: 100vw;
   background-color: $color-bg-white;
 
   @media (min-width: $desktop-width) {
@@ -86,7 +85,6 @@
 }
 
 .address__map {
-  width: 100vw;
   height: 362px;
   display: grid;
 
