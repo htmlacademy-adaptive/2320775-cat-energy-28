@@ -18,10 +18,6 @@
     content: "";
     z-index: -1;
 
-    @-moz-document url-prefix("") {
-      top: -73px;
-    }
-
     @media (min-width: $tablet-width) {
       top: 20px;
       width: 100vw;
@@ -30,27 +26,17 @@
       box-shadow: 100vw 0 0 #68b738;
     }
 
-      @-moz-document url-prefix("") {
+    @-moz-document url-prefix("") {
+      top: -72px;
+
+      @media (min-width: $tablet-width) {
         top: -90px;
       }
 
-    @media (min-width: $desktop-width) {
-      // width: 1440px;
-      // right: -110px;
-      // top: 20px;
+      @media (min-width: $desktop-width) {
+        top: -86px;
+      }
     }
-
-    // @-moz-document url-prefix("") {
-    //   top: -47px;
-
-    //   @media (min-width: $tablet-width) {
-    //     top: -90px;
-    //   }
-
-    //   @media (min-width: $desktop-width) {
-    //     top: -86px;
-    //   }
-    // }
   }
 
   @media (min-width: $tablet-width) {

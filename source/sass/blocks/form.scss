@@ -2,14 +2,9 @@
   @include reset;
   border: none;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 630px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   grid-column: 1 / 3;
-  //   width: 569px;
-  // }
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+  }
 }
 
 .form__fieldset-choice {
@@ -39,12 +34,7 @@
   border: none;
   z-index: 1;
 
-  // @media (min-width: $tablet-width) {
-  //   margin-bottom: 42px;
-  // }
-
   @media (min-width: $desktop-width) {
-    // width: 1220px;
     grid-column: 1 / -1;
   }
 }

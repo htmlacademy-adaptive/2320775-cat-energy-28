@@ -114,9 +114,9 @@
 
 .form-add__field-control:checked + .form-add__mark::before {
   position: absolute;
-  transform: translate(30%, 30%);
-  width: 18px;
-  height: 18px;
+  transform: translate(20%,18%);
+  width: 20px;
+  height: 20px;
   background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   content: "";
