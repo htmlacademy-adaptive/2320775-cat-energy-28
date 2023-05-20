@@ -256,7 +256,8 @@
 
   @media (min-width: $tablet-width) {
     @include list-reset;
-    width: 440px;
+    margin-left: 50px;
+    width: 490px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
