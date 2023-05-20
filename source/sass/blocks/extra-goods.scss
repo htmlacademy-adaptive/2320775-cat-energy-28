@@ -1,6 +1,6 @@
 .extra-goods__wrapper {
   position: relative;
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
   z-index: 1;
 
@@ -18,14 +18,21 @@
 
 .extra-goods__container {
   position: relative;
-  width: 280px;
+  width: 265px;
   margin: 0 auto;
+  margin-bottom: 37px;
   background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: 0;
+    margin-bottom: 80px;
+    width: 415px;
+  }
 }
 
 .extra-goods__title {
-  width: fit-content;
-  margin-bottom: 37px;
+  width: 230px;
   font-family: $oswald400;
   text-align: left;
   font-weight: 400;
@@ -45,28 +52,26 @@
 
     @media (min-width: $tablet-width) {
       top: 20px;
-      right: -73%;
-      width: 768px;
-      z-index: -1;
+      left: inherit;
+      right: 0;
+      box-shadow: 100vw 0 0 #68b738;
 
       @media (min-width: $desktop-width) {
-        width: 1440px;
-        right: -230%;
+        right: 0;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    padding: 0 37px;
-    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     margin-bottom: 80px;
-    margin-left: -38px;
   }
 }
 
@@ -76,9 +81,15 @@
   width: 280px;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: inherit;
+    min-height: 288px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 896px;
     min-height: 288px;
+    margin: 0;
   }
 }
 
