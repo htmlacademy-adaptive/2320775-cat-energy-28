@@ -54,7 +54,12 @@
     position: absolute;
     width: 245px;
     height: 288px;
-    transform: translate(1087px, -373px);
+    right: 8%;
+    top: 291%;
+  }
+
+  @-moz-document url-prefix("") {
+    top: 265%;
   }
 }
 

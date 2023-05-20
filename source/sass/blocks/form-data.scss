@@ -18,6 +18,10 @@
     content: "";
     z-index: -1;
 
+    @-moz-document url-prefix("") {
+      top: -73px;
+    }
+
     @media (min-width: $tablet-width) {
       top: 20px;
       width: 100vw;
@@ -25,6 +29,10 @@
       right: 0;
       box-shadow: 100vw 0 0 #68b738;
     }
+
+      @-moz-document url-prefix("") {
+        top: -90px;
+      }
 
     @media (min-width: $desktop-width) {
       // width: 1440px;
@@ -86,6 +94,7 @@
     width: 1220px;
     flex-direction: row;
     gap: 80px;
+    margin-bottom: 71px;
   }
 }
 
