@@ -19,7 +19,11 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
+      top: 20px;
       width: 100vw;
+      left: inherit;
+      right: 0;
+      box-shadow: 100vw 0 0 #68b738;
     }
 
     @media (min-width: $desktop-width) {

@@ -19,32 +19,36 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
+      top: 20px;
       width: 100vw;
+      left: inherit;
+      right: 0;
+      box-shadow: 100vw 0 0 #68b738;
     }
 
-    @media (min-width: $desktop-width) {
-      // width: 1440px;
-      // right: -110px;
-      // top: 20px;
-    }
+    // @media (min-width: $desktop-width) {
+    //   // width: 1440px;
+    //   // right: -110px;
+    //   // top: 20px;
+    // }
 
-    @-moz-document url-prefix("") {
-      top: -47px;
+    // @-moz-document url-prefix("") {
+    //   top: -47px;
 
-      @media (min-width: $tablet-width) {
-        top: -90px;
-      }
+    //   @media (min-width: $tablet-width) {
+    //     top: -90px;
+    //   }
 
-      @media (min-width: $desktop-width) {
-        top: -71px;
-      }
-    }
+    //   @media (min-width: $desktop-width) {
+    //     top: -71px;
+    //   }
+    // }
   }
 
   @media (min-width: $tablet-width) {
     width: 211px;
     padding: 0 40px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     margin-left: -42px;
     font-size: 36px;
     line-height: 36px;

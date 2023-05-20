@@ -19,7 +19,11 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
+      top: 20px;
       width: 100vw;
+      left: inherit;
+      right: 0;
+      box-shadow: 100vw 0 0 #68b738;
     }
 
     @media (min-width: $desktop-width) {
@@ -28,17 +32,17 @@
       // top: 20px;
     }
 
-    @-moz-document url-prefix("") {
-      top: -47px;
+    // @-moz-document url-prefix("") {
+    //   top: -47px;
 
-      @media (min-width: $tablet-width) {
-        top: -90px;
-      }
+    //   @media (min-width: $tablet-width) {
+    //     top: -90px;
+    //   }
 
-      @media (min-width: $desktop-width) {
-        top: -86px;
-      }
-    }
+    //   @media (min-width: $desktop-width) {
+    //     top: -86px;
+    //   }
+    // }
   }
 
   @media (min-width: $tablet-width) {
@@ -75,6 +79,7 @@
     gap: 20px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,4 +154,10 @@
   padding-left: 10px;
   padding-right: 20px;
   stroke: $color-default-black;
+}
+
+.form-data__field-control[placeholder] {
+  @media (min-width: $tablet-width) {
+    padding: 10px 22px;
+  }
 }
