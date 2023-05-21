@@ -28,6 +28,10 @@
     margin-bottom: 80px;
     width: 415px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -36px;
+  }
 }
 
 .extra-goods__title {
