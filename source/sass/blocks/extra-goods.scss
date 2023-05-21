@@ -236,7 +236,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-  background-image: url("../img/jpg/background-prize@2x.jpg");
+    background-image: url("../img/jpg/background-prize@2x.jpg");
 
     @supports (background-image: url("../img/jpg/background-prize@2x.webp")) {
       background-image: url("../img/jpg/background-prize@2x.webp");
@@ -257,7 +257,7 @@
     }
 
     @media (min-resolution: 2dppx) {
-    background-image: url("../img/jpg/background-prize-tablet@2x.jpg");
+      background-image: url("../img/jpg/background-prize-tablet@2x.jpg");
 
       @supports (background-image: url("../img/jpg/background-prize-tablet@2x.webp")) {
         background-image: url("../img/jpg/background-prize-tablet@2x.webp");
