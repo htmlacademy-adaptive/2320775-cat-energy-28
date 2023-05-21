@@ -10,19 +10,19 @@
 
   &::after {
     position: absolute;
-    width: calc(100vw - 20px);
+    width: 100vw;
     height: 2px;
     top: 16px;
-    left: 0;
-    background-color: $color-bg-green;
+    right: 123px;
+    box-shadow: 100vw 0 0 #68b738;
     content: "";
     z-index: -1;
 
     @media (min-width: $tablet-width) {
       top: 20px;
       width: 100vw;
-      left: inherit;
       right: 0;
+      background-color: $color-bg-green;
       box-shadow: 100vw 0 0 #68b738;
     }
 

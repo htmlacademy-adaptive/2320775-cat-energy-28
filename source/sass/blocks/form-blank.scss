@@ -29,10 +29,11 @@
 .form-blank__item:last-child::after {
   position: absolute;
   width: 100vw;
-  left: 0;
+  right: 0;
   margin-top: 24px;
   height: 1px;
   background: $color-border-list2;
+  box-shadow: 100vw 0 0 $color-border-list2;
   content: "";
 
   @media (min-width: $tablet-width) {

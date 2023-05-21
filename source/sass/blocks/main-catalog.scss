@@ -32,6 +32,7 @@
     width: 100vw;
     height: 1px;
     background: $color-border-list2;
+    box-shadow: 100vw 0 0 $color-border-list2;
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -107,6 +108,7 @@
     height: 1px;
     margin-top: 12px;
     background: $color-border-list3;
+    box-shadow: 100vw 0 0 $color-border-list3;
     transform: translateY(-31px);
     content: "";
 
