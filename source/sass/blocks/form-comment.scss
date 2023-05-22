@@ -10,24 +10,20 @@
 
   &::after {
     position: absolute;
-    top: 16px;
-    right: -20px;
-    width: 300px;
+    width: 100vw;
     height: 2px;
-    background-color: $color-bg-green;
+    top: 16px;
+    right: 162px;
+    box-shadow: 100vw 0 0 #68b738;
     content: "";
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
-      right: -69px;
-      top: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1440px;
-      right: -110px;
       top: 20px;
+      width: 100vw;
+      right: 0;
+      background-color: $color-bg-green;
+      box-shadow: 100vw 0 0 #68b738;
     }
 
     @-moz-document url-prefix("") {
@@ -38,7 +34,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        top: -86px;
+        top: -90px;
       }
     }
   }

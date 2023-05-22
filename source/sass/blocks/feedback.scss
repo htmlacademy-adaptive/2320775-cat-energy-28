@@ -39,10 +39,12 @@
 
   &::before {
     position: absolute;
-    width: 320px;
+    right: 0;
+    top: 63px;
+    width: 100vw;
     height: 1px;
     background: $color-border-list2;
-    transform: translate(-20px, -27px);
+    box-shadow: 100vw 0 0 $color-border-list2;
     content: "";
 
     @media (min-width: $tablet-width) {

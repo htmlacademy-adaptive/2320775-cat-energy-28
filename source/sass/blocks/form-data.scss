@@ -10,28 +10,24 @@
 
   &::after {
     position: absolute;
-    width: 300px;
+    width: 100vw;
     height: 2px;
     top: 16px;
-    right: -20px;
-    background-color: $color-bg-green;
+    right: 80px;
+    box-shadow: 100vw 0 0 #68b738;
     content: "";
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
-      right: -69px;
-      top: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1440px;
-      right: -110px;
       top: 20px;
+      width: 100vw;
+      right: 0;
+      background-color: $color-bg-green;
+      box-shadow: 100vw 0 0 #68b738;
     }
 
     @-moz-document url-prefix("") {
-      top: -47px;
+      top: -72px;
 
       @media (min-width: $tablet-width) {
         top: -90px;
@@ -77,12 +73,14 @@
     gap: 20px;
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     flex-direction: row;
     gap: 80px;
+    margin-bottom: 71px;
   }
 }
 
@@ -151,4 +149,10 @@
   padding-left: 10px;
   padding-right: 20px;
   stroke: $color-default-black;
+}
+
+.form-data__field-control[placeholder] {
+  @media (min-width: $tablet-width) {
+    padding: 10px 22px;
+  }
 }

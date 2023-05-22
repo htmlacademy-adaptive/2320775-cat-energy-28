@@ -33,6 +33,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 14px;
+  }
 }
 
 .social-list__academy-title {
@@ -47,6 +51,7 @@
   align-items: center;
   justify-content: space-between;
   margin-right: -10px;
+  gap: 18px;
   color: $color-desc;
 }
 
