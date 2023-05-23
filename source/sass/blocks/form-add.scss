@@ -87,7 +87,7 @@
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-gap: 15px;
-  align-items: center;
+  align-items: start;
 
   @media (min-width: $tablet-width) {
     grid-gap: 30px;

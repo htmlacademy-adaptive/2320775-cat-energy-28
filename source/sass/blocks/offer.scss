@@ -20,6 +20,7 @@
 }
 
 .offer__review {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -30,8 +31,8 @@
 
   &::before {
     position: absolute;
-    width: 100%;
-    height: 302px;
+    width: 100vw;
+    height: 100%;
     background-image: url("../img/jpg/background-mobile.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -90,6 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: initial;
     width: 420px;
     min-height: 180px;
     padding: 0 80px;
@@ -119,9 +121,9 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 10px 0;
-  margin-bottom: 15px;
+  padding: 27px 15px 25px;
   color: $color-default-white;
+  word-break: break-word;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -135,7 +137,8 @@
 }
 
 .offer__about {
-  padding: 0 10px;
+  padding: 0 40px 20px;
+  margin: 0;
   font-family: $oswald400;
   font-size: 14px;
   line-height: 14px;

@@ -57,13 +57,13 @@
     row-gap: 36px;
     margin-bottom: 56px;
     counter-reset: verse 0;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 230px);
     grid-gap: 94px;
     margin-bottom: 80px;
-    align-items: baseline;
   }
 }
 

@@ -343,9 +343,19 @@
 
 .example__slider-bar:hover {
   background-color: $color-bg-green;
+  transition: background-color 0.2s ease-out;
 
   .example__slider-toggle {
     background-image: url("../img/svg/thumb_green.svg");
+  }
+}
+
+.example__slider-bar:focus-within {
+  background-color: $color-bg-green;
+
+  .example__slider-toggle {
+    background-image: url("../img/svg/thumb_green.svg");
+    outline: $color-bg-green;;
   }
 }
 
