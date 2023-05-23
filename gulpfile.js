@@ -9,7 +9,7 @@ import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+import {stacksvg} from 'gulp-stacksvg';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -48,7 +48,6 @@ return gulp.src('source/js/*.js')
 .pipe(browser.stream());
 }
 
-
 // Images
 
 const optimizeImages = () => {
@@ -82,10 +81,9 @@ gulp.src(['source/img/svg/*.svg', '!source/img/svg/sprite/*.svg'])
 const sprite = () => {
 return gulp.src('source/img/svg/sprite/*.svg')
 .pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
+.pipe(stacksvg({
+  output: 'sprite'
 }))
-.pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
 
