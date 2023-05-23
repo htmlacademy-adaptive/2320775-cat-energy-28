@@ -220,11 +220,11 @@
   display: block;
   width: 280px;
   min-height: 289px;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   background-image: url("../img/jpg/background-prize.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 35px;
+  background-color: $color-bg-green;
 
   @supports (background-image: url("../img/jpg/background-prize.webp")) {
     background-image: url("../img/jpg/background-prize.webp");

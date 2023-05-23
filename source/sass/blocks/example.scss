@@ -317,7 +317,7 @@
   transform: translateX(138px);
   width: 4px;
   height: 256px;
-  background-color: #666666;
+  background-color: $color-slider;
 
   @media (min-width: $tablet-width) {
     height: 512px;
@@ -339,4 +339,15 @@
   @media (min-width: $tablet-width) {
     transform: translate(-18px, 234px);
   }
+}
+
+.example__slider-bar:hover {
+    background-color: $color-bg-green;
+  .example__slider-toggle {
+    background-image: url("../img/svg/thumb_green.svg");
+  }
+}
+
+.example__slider-bar:active {
+  opacity: 0.6;
 }
