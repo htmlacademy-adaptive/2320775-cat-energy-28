@@ -13,12 +13,8 @@
   &:focus {
     border-color: $color-desc;
   }
+}
 
-  &:invalid {
-    border-color: $color-border-invalid;
-  }
-
-  &:valid {
-    border-color: $color-border-list6;
-  }
+.input:invalid:not(:placeholder-shown):not(:focus) {
+  border: 1px solid $color-border-invalid;
 }

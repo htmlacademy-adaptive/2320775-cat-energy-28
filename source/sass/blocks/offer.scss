@@ -138,7 +138,7 @@
 
 .offer__about {
   padding: 0 40px 20px;
-  margin: 0;
+  margin: 0 0 144px;
   font-family: $oswald400;
   font-size: 14px;
   line-height: 14px;
@@ -147,11 +147,11 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    color: $color-default-black;
-    padding: 0;
+    @include reset;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    color: $color-default-black;
   }
 
   @media (min-width: $desktop-width) {
