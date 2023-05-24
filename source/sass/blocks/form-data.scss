@@ -156,10 +156,10 @@
   border: 1px solid $color-border-invalid;
 }
 
-.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-letter  {
+.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-letter {
   stroke: $color-border-invalid;
 }
 
-.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-phone  {
+.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-phone {
   stroke: $color-border-invalid;
 }
