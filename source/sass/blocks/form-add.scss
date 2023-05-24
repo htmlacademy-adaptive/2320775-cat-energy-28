@@ -79,7 +79,7 @@
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     grid-template-columns: repeat(4, 245px);
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
@@ -87,7 +87,7 @@
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-gap: 15px;
-  align-items: start;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-gap: 30px;

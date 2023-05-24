@@ -9,6 +9,11 @@
 
 .address__wrapper--form {
   background-color: $color-bg-gray;
+  .address__wrapper-container {
+    @media (min-width: $desktop-width) {
+      transform: translate(105px, -4px);
+    }
+  }
 }
 
 .address__wrapper--catalog {
