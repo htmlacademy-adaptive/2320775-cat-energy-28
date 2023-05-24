@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -6px;
+    padding-top: 59px;
   }
 }
 
@@ -32,7 +33,7 @@
     width: 170px;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +87,7 @@
 
 .catalog-more__cross {
   @media (min-width: $tablet-width) {
-    transform: translate(-33px, 16px);
+    transform: translate(-33px, 22px);
     margin-bottom: 100px;
   }
 

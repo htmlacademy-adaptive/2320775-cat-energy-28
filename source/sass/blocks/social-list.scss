@@ -11,6 +11,7 @@
 
   &:last-child {
     padding: 12px 0 30px;
+    border-bottom: none;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -35,10 +36,6 @@
     padding: 0;
     margin-left: 24px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   column-gap: 30px;
-  // }
 }
 
 .social-list__academy-title {

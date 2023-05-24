@@ -80,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 
@@ -202,12 +202,11 @@
 
 .extra-goods__data-count {
   font-size: 14px;
-  line-height: 14px;
   grid-column: 2 / 3;
   justify-self: end;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
+    width: 84px;
     text-align: end;
     font-size: 16px;
     line-height: 20px;

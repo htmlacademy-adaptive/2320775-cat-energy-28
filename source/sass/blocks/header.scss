@@ -224,8 +224,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: -3px 0 0 53px;
-    width: 484px;
+    margin: -7px 0px 0 57px;
+    width: 478px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -257,8 +257,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: -3px 0 0 53px;
-    width: 484px;
+    margin: -7px 0px 0 57px;
+    width: 478px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -275,7 +275,7 @@
 
 .header__navigation-item {
   @media (min-width: $tablet-width) {
-    padding: 10px 18px;
+    padding: 10px 19px 10px 16px;
   }
 
   @media (min-width: $desktop-width) {
