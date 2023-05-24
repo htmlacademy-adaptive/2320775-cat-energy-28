@@ -36,7 +36,7 @@
   color: $color-default-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -54,7 +54,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 245px 250px;
     column-gap: 139px;
-    row-gap: 36px;
+    row-gap: 38px;
     margin-bottom: 56px;
     counter-reset: verse 0;
     align-items: baseline;

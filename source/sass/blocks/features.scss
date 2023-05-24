@@ -72,7 +72,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     display: block;
-    padding: 72px 20px 0 0;
+    padding: 75px 20px 0 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -98,7 +98,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: inherit;
-    right: 14%;
+    right: 13%;
     top: 22%;
     transform: none;
   }
@@ -149,7 +149,7 @@
   @media (min-width: $tablet-width) {
     background-size: inherit;
     right: 4%;
-    top: 36%;
+    top: 37%;
     transform: none;
   }
 
@@ -238,7 +238,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    padding: 30px 20px 53px 0;
+    padding: 34px 20px 50px 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -273,4 +273,8 @@
   background-image: url("../img/svg/arrow-small.svg");
   background-repeat: no-repeat;
   transform: translateY(1px);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 24px;
+  }
 }

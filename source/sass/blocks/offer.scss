@@ -134,6 +134,10 @@
     line-height: 60px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .offer__about {
@@ -148,6 +152,7 @@
 
   @media (min-width: $tablet-width) {
     @include reset;
+    margin-bottom: 18px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
