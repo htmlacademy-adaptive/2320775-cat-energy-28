@@ -50,6 +50,7 @@
 
 
   @media (min-width: $tablet-width) {
+    margin-top: -5px;
     padding: 0;
     width: 174px;
   }
@@ -113,8 +114,8 @@
 
   @media (min-width: $tablet-width) {
     @include list-reset;
-    margin-left: 45px;
-    width: 490px;
+    margin-left: 50px;
+    width: 484px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -200,7 +201,7 @@
     @include list-reset;
     position: initial;
     margin-left: 50px;
-    width: 490px;
+    width: 484px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -210,6 +211,7 @@
 
   @media (min-width: $desktop-width) {
     width: 550px;
+    margin-left: -7px;
     justify-content: flex-start;
     background: initial;
   }
@@ -222,9 +224,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include list-reset;
-    margin-left: 50px;
-    width: 490px;
+    margin: -7px 0 0 57px;
+    width: 478px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -234,7 +235,7 @@
 
   @media (min-width: $desktop-width) {
     width: 550px;
-    margin-left: 0;
+    margin-left: -7px;
     justify-content: flex-start;
   }
 }
@@ -255,9 +256,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include list-reset;
-    margin-left: 50px;
-    width: 490px;
+    padding: 0;
+    margin: -7px 0 0 57px;
+    width: 478px;
     min-height: 34px;
     display: flex;
     flex-direction: row;
@@ -267,17 +268,18 @@
 
   @media (min-width: $desktop-width) {
     width: 550px;
+    margin-left: -7px;
     justify-content: flex-start;
   }
 }
 
 .header__navigation-item {
   @media (min-width: $tablet-width) {
-    padding: 10px 20px;
+    padding: 10px 19px 10px 16px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 15px;
+    padding: 10px 17px;
   }
 }
 
@@ -300,7 +302,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0;
+    padding: 8px 0;
     position: relative;
     border: none;
 

@@ -22,7 +22,7 @@
 
 .extra-goods__container {
   position: relative;
-  width: 265px;
+  width: 248px;
   margin-bottom: 37px;
   background-color: $color-default-white;
 
@@ -40,6 +40,7 @@
 }
 
 .extra-goods__title {
+  margin: 6px 0;
   width: 230px;
   font-family: $oswald400;
   text-align: left;
@@ -64,6 +65,10 @@
       background-color: $color-bg-green;
       box-shadow: 100vw 0 0 #68b738;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 21px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -75,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 
@@ -83,12 +88,12 @@
   @include list-reset;
   display: grid;
   width: 280px;
-  margin: 0 auto 35px;
+  margin: 0 auto 33px;
 
   @media (min-width: $tablet-width) {
     width: inherit;
     min-height: 288px;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +112,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 40px 30px;
+    padding: 24px 40px 30px 35px;
     border: 1px solid $color-border-list4;
     border-bottom: none;
   }
@@ -123,7 +128,7 @@
 }
 
 .extra-goods__table {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -138,7 +143,8 @@
 .extra-goods__row {
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 9px;
+  row-gap: 7px;
+  margin-left: -1px;
   color: $color-desc;
 
   @media (min-width: $tablet-width) {
@@ -154,6 +160,7 @@
 
 .extra-goods__caption {
   grid-column: 1 / -1;
+  margin-left: -2px;
   font-family: $oswald400;
   font-weight: 400;
   font-size: 16px;
@@ -167,7 +174,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 325px;
+    width: 318px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -195,12 +202,11 @@
 
 .extra-goods__data-count {
   font-size: 14px;
-  line-height: 14px;
   grid-column: 2 / 3;
   justify-self: end;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
+    width: 84px;
     text-align: end;
     font-size: 16px;
     line-height: 20px;
@@ -208,6 +214,8 @@
 }
 
 .extra-goods__button {
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
 }
 
@@ -220,11 +228,11 @@
   display: block;
   width: 280px;
   min-height: 289px;
-  margin: 0 auto;
+  margin: 0 auto 35px;
   background-image: url("../img/jpg/background-prize.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 35px;
+  background-color: $color-bg-green;
 
   @supports (background-image: url("../img/jpg/background-prize.webp")) {
     background-image: url("../img/jpg/background-prize.webp");
@@ -272,7 +280,7 @@
   display: block;
   width: 161px;
   margin: 0 auto;
-  padding: 189px 61px 43px 58px;
+  padding: 188px 61px 43px 58px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -304,7 +312,7 @@
   @media (min-width: $tablet-width) {
     margin-right: 50px;
     text-align: left;
-    padding: 70px 72px 43px 58px;
+    padding: 72px 72px 43px 58px;
   }
 
   @media (min-width: $desktop-width) {

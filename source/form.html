@@ -72,14 +72,14 @@
               <ul class="form-blank__list">
                 <li class="form-blank__item">
                   <label class="form-blank__field">
-                    <span class="form-blank__field-label">Имя:<sup>*</sup></span>
+                    <span class="form-blank__field-label">Имя:*</span>
                     <input class="form-blank__field-control input" type="text" name="name" id="name" placeholder="Барсик"
                       required>
                   </label>
                 </li>
                 <li class="form-blank__item">
                   <label class="form-blank__field">
-                    <span class="form-blank__field-label">Вес (кг):<sup>*</sup></span>
+                    <span class="form-blank__field-label">Вес (кг):*</span>
                     <input class="form-blank__field-control input" type="number" name="weight" placeholder="7" min="0"
                       max="25" required>
                   </label>
@@ -127,7 +127,7 @@
               <ul class="form-data__list">
                 <li class="form-data__item">
                   <label class="form-data__field">
-                    <span class="form-data__field-label">E-mail:<sup>*</sup></span>
+                    <span class="form-data__field-label">E-mail:*</span>
                     <input class="form-data__field-control input" type="email" name="mail"
                       placeholder="kuklachev@gmail.com" required>
                     <svg class="form-data__field-control-letter" width="19" height="14" fill="none">
@@ -137,9 +137,9 @@
                 </li>
                 <li class="form-data__item">
                   <label class="form-data__field">
-                    <span class="form-data__field-label">Телефон:<sup>*</sup></span>
+                    <span class="form-data__field-label">Телефон:*</span>
                     <input class="form-data__field-control input" type="tel" name="phone"
-                      placeholder="8 (960) 900-60-90" maxlength="21" required>
+                      placeholder="8 (960) 900-60-90" minlength="11" maxlength="21" required>
                     <svg class="form-data__field-control-phone" width="16" height="16" fill="none">
                       <use xlink:href="./img/sprite.svg#phone"></use>
                     </svg>
@@ -189,7 +189,7 @@
             </fieldset>
             <div class="form__submit">
               <button class="form__button button" type="submit">Отправить заявку</button>
-              <p class="form__required"><sup>*</sup> — Обязательные поля</p>
+              <p class="form__required">* — Обязательные поля</p>
             </div>
           </form>
         </div>

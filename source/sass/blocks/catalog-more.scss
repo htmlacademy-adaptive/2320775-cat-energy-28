@@ -4,12 +4,18 @@
 
 .catalog-more__wrapper {
   position: relative;
-  padding-top: 63px;
+  padding-top: 60px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 63px;
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -6px;
+    padding-top: 59px;
   }
 }
 
@@ -27,7 +33,7 @@
     width: 170px;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +59,6 @@
 
 .catalog-more__button {
   font-size: 16px;
-  line-height: 20px;
   padding: 10px;
   color: $color-desc;
   background-color: $color-bg-gray;
@@ -82,7 +87,7 @@
 
 .catalog-more__cross {
   @media (min-width: $tablet-width) {
-    transform: translate(-33px, 16px);
+    transform: translate(-33px, 22px);
     margin-bottom: 100px;
   }
 

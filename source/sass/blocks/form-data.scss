@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   }
 }
 
@@ -80,7 +80,7 @@
     width: 1220px;
     flex-direction: row;
     gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 68px;
   }
 }
 
@@ -117,11 +117,6 @@
     stroke: $color-bg-green;
   }
 
-  &:invalid + .form-data__field-control-letter,
-  &:invalid + .form-data__field-control-phone {
-    stroke: $color-border-invalid;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     gap: 20px;
@@ -135,7 +130,7 @@
   position: absolute;
   right: 0;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 16px;
   stroke: $color-default-black;
 
   @media (min-width: $desktop-width) {
@@ -147,7 +142,7 @@
   position: absolute;
   right: 0;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 16px;
   stroke: $color-default-black;
 }
 
@@ -155,4 +150,16 @@
   @media (min-width: $tablet-width) {
     padding: 10px 22px;
   }
+}
+
+.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) {
+  border: 1px solid $color-border-invalid;
+}
+
+.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-letter {
+  stroke: $color-border-invalid;
+}
+
+.form-data__field-control:invalid:not(:placeholder-shown):not(:focus) + .form-data__field-control-phone {
+  stroke: $color-border-invalid;
 }

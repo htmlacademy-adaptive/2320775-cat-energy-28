@@ -2,7 +2,7 @@
   border-bottom: 1px solid $color-border-list2;
 
   &:first-child {
-    padding: 40px 0 16px;
+    padding: 40px 0 15px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -10,7 +10,8 @@
   }
 
   &:last-child {
-    padding: 10px 0 30px;
+    padding: 12px 0 30px;
+    border-bottom: none;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -23,7 +24,7 @@
 }
 
 .social-list__item--grid {
-  padding: 11px;
+  padding: 14px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
   justify-content: center;
@@ -31,11 +32,9 @@
   column-gap: 14px;
 
   @media (min-width: $tablet-width) {
+    column-gap: 30px;
     padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    column-gap: 14px;
+    margin-left: 24px;
   }
 }
 
@@ -53,6 +52,11 @@
   margin-right: -10px;
   gap: 18px;
   color: $color-desc;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    gap: 27px;
+  }
 }
 
 .social-list__logo {
@@ -99,5 +103,9 @@
 
 .social-list__svg {
   display: block;
-  padding: 10px;
+  padding: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
 }
